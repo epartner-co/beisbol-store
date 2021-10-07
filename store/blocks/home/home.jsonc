@@ -1,77 +1,220 @@
 {
   "store.home": {
+    "props": {
+      "blockClass": ["Home"]
+    },
     "blocks": [
-      "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
-      "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
+      "flex-layout.row#TopSlide",
+      "flex-layout.row#Information",
+      "flex-layout.row#CategorySlide",
+      "rich-text#Title-1",
+      "flex-layout.row#Shelf-1",
+      "__fold__.experimentalLazyAssets", // ! Lazy Loading /
+      "flex-layout.row#Banners",
+      "rich-text#Title-2",
+      "flex-layout.row#Shelf-2",
+      "rich-text#Title-moms",
+      "flex-layout.row#Banners2",
+      "rich-text#Title-3",
+      "flex-layout.row#Shelf-3",
+      // "slider-layout#homeTopSlide",
+      // "list-context.image-list#homeList",
+      // "flex-layout.row#deals",
+      // "rich-text#shelf-title",
+      // "flex-layout.row#shelf",
+      // "info-card#home",
+      // "rich-text#question",
+      // "rich-text#link",
       "newsletter"
     ]
   },
-
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+  // * Top Slide
+  "flex-layout.row#TopSlide": {
     "props": {
-      "height": 720,
-      "images": [
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
-        },
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
-        }
+      "blockClass": ["Home__TopSlide"]
+    },
+    "children": ["flex-layout.col#TopSlide"]
+  },
+
+  // * Information Text
+  "flex-layout.row#Information": {
+    "props": {
+      "blockClass": ["Home__Information"]
+    },
+    "children": ["flex-layout.col#Information"]
+  },
+
+  // * Category Slide
+  "flex-layout.row#CategorySlide": {
+    "props": {
+      "blockClass": ["Home__CategorySlide"]
+    },
+    "children": ["flex-layout.col#CategorySlide"]
+  },
+
+  // *  Title Destacados - 1
+  "rich-text#Title-1": {
+    "props": {
+      "blockClass": [
+        "Home__Title",
+        "Title--destacados-new"
+      ],
+      "text": "## Productos destacados"
+    }
+  },
+
+  // * Shelf Destacados - 1
+  "flex-layout.row#Shelf-1": {
+    "props": {
+      "blockClass": [
+        "Home__Shelf",
+        "Home__Shelf--1"
       ]
-    }
+    },
+    "children": ["flex-layout.col#Shelf-1"]
   },
-  "slider-layout#demo-images": {
+
+  // * Banners
+  "flex-layout.row#Banners": {
     "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "blockClass": [
+        "Home__Banners",
+        "Home__Banners--1"
+      ]
+    },
+    "children": ["flex-layout.col#Banners"]
+  },
+
+  // *  Title Products - 2
+  "rich-text#Title-2": {
+    "props": {
+      "blockClass": [
+        "Home__Title",
+        "Title--products"
+      ],
+      "text": "## Productos del mes"
     }
   },
 
-  "rich-text#shelf-title": {
+  // * Shelf Products - 2
+  "flex-layout.row#Shelf-2": {
     "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
+      "blockClass": [
+        "Home__Shelf",
+        "Home__Shelf--2"
+      ]
+    },
+    "children": ["flex-layout.col#Shelf-2"]
+  },
+
+  // *  Title Moms
+  "rich-text#Title-moms": {
+    "props": {
+      "blockClass": ["Home__Title", "Title--mom"],
+      "text": "## ¡Tranquilidad de Madres!"
     }
   },
-  "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
-  },
-  "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
+
+  // * Banners 2
+  "flex-layout.row#Banners2": {
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "blockClass": [
+        "Home__Banners",
+        "Home__Banners-2"
+      ]
+    },
+    "children": ["flex-layout.col#Banners2"]
+  },
+
+  // *  Title Products - 3
+  "rich-text#Title-3": {
+    "props": {
+      "blockClass": [
+        "Home__Title",
+        "Title--destacados"
+      ],
+      "text": "## Destacados"
     }
   },
-  "slider-layout#demo-products": {
+
+  // * Shelf Products - 3
+  "flex-layout.row#Shelf-3": {
     "props": {
-      "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 3,
-        "phone": 1
-      },
-      "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
+      "blockClass": [
+        "Home__Shelf",
+        "Home__Shelf--3"
+      ]
+    },
+    "children": ["flex-layout.col#Shelf-3"]
+  },
+
+  "newsletter": {
+    "props": {
+      "blockClass": ["Newsletter"],
+      "label": "Suscríbete a nuestro newsletter",
+      "placeholder": "Correo electrónico",
+      "submit": "Suscribirme"
     }
   },
+
+  // "list-context.image-list#demo": {
+  //   "children": ["slider-layout#demo-images"],
+  //   "props": {
+  //     "height": 720,
+  //     "images": [
+  //       {
+  //         "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+  //         "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+  //       },
+  //       {
+  //         "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+  //         "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+  //       }
+  //     ]
+  //   }
+  // },
+  // "slider-layout#demo-images": {
+  //   "props": {
+  //     "itemsPerPage": {
+  //       "desktop": 1,
+  //       "tablet": 1,
+  //       "phone": 1
+  //     },
+  //     "infinite": true,
+  //     "showNavigationArrows": "desktopOnly",
+  //     "blockClass": "carousel"
+  //   }
+  // },
+  // "rich-text#shelf-title": {
+  //   "props": {
+  //     "text": "## Summer",
+  //     "blockClass": "shelfTitle"
+  //   }
+  // },
+  // "flex-layout.row#shelf": {
+  //   "children": [
+  //     "list-context.product-list#demo1"
+  //   ]
+  // },
+  // "list-context.product-list#demo1": {
+  //   "blocks": ["product-summary.shelf"],
+  //   "children": ["slider-layout#demo-products"],
+  //   "props": {
+  //     "orderBy": "OrderByTopSaleDESC"
+  //   }
+  // },
+  // "slider-layout#demo-products": {
+  //   "props": {
+  //     "itemsPerPage": {
+  //       "desktop": 5,
+  //       "tablet": 3,
+  //       "phone": 1
+  //     },
+  //     "infinite": true,
+  //     "fullWidth": false,
+  //     "blockClass": "shelf"
+  //   }
+  // },
 
   "info-card#home": {
     "props": {
@@ -85,19 +228,19 @@
       "blockClass": "info-card-home",
       "textAlignment": "center"
     }
-  },
-
-  "rich-text#question": {
-    "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
-    }
-  },
-
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
-    }
   }
+
+  // "rich-text#question": {
+  //   "props": {
+  //     "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
+  //     "blockClass": "question"
+  //   }
+  // },
+
+  // "rich-text#link": {
+  //   "props": {
+  //     "text": "\n**Reach us at**\nwww.vtex.com.br",
+  //     "blockClass": "link"
+  //   }
+  // }
 }

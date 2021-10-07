@@ -1,0 +1,50 @@
+{
+  "flex-layout.col#Banners": {
+    "props": {
+      "blockClass": ["Banners", "Banners--top"]
+    },
+    "children": [
+      "info-card#BannersTop--item-1",
+      "info-card#BannersTop--item-2"
+    ]
+  },
+
+  // * Info card 1
+  "info-card#BannersTop--item-1": {
+    "props": {
+      "blockClass": [
+        "BannerItem__container",
+        "BannerTop__item",
+        "BannerTop__item--1"
+      ],
+      "id": "BannersTop--item-1",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      // "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "mobileImageUrl": "https://epartner.vteximg.com.br/arquivos/mobile-banner-cuidamos-de-ti.png",
+      "headline": "¡Cuidamos de ti por eso estrenamos",
+      "subhead": "Tienda Online!",
+      "callToActionText": "Envíos a nivel nacional gratis",
+      "callToActionUrl": "#"
+    }
+  },
+
+  // * Info card 2
+  "info-card#BannersTop--item-2": {
+    "props": {
+      "blockClass": [
+        "BannerItem__container",
+        "BannerTop__item",
+        "BannerTop__item--2"
+      ],
+      "id": "BannersTop--item-2",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      // "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "mobileImageUrl": "https://epartner.vteximg.com.br/arquivos/mobile-banner-mas-aroma-para-tu-economia.png",
+      "headline": "Más aroma para tu economía",
+      "callToActionText": "Comprar producto",
+      "callToActionUrl": "#"
+    }
+  }
+}

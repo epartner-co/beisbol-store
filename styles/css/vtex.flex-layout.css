@@ -1,3 +1,28 @@
+/* ------------------------------- */
+/* //* Home */
+/* ------------------------------- */
+/* ! Home information  */
+.flexRowContent--Home__Information {
+  margin-top: 2%;
+}
+.flexCol--Information__Container {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flexColChild--Information__Container {
+  width: 49%;
+  background-color: #ededed;
+}
+.flexColChild--Information__Container:first-child {
+  margin-bottom: 2%;
+}
+/* ! Category Slide */
+.flexRowContent--Home__CategorySlide {
+  margin-top: 30px;
+}
+
+/* ------------------------------- */
 .flexRowContent--menu-link,
 .flexRowContent--main-header {
   padding: 0 0.5rem;
@@ -31,12 +56,14 @@
   background-color: #f0f0f0;
 }
 
-.flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
+.flexRowContent--menu-link
+  :global(.vtex-menu-2-x-styledLink) {
   color: #ffffff;
   font-size: 14px;
 }
 
-.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
+.flexRowContent--main-header
+  :global(.vtex-menu-2-x-styledLink) {
   color: #727273;
   font-size: 14px;
 }

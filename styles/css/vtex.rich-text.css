@@ -1,3 +1,46 @@
+/* ------------------------------- */
+/* //* Home */
+/* ------------------------------- */
+/* ! Home information  */
+.wrapper--Information__item {
+  width: 100%;
+}
+.paragraph--Information__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #001689;
+  font-family: Urbanist;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.paragraph--Information__item::before {
+  content: '';
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.paragraph--Information__item--1::before {
+  background-image: url('https://epartner.vteximg.com.br/arquivos/icono-garantia de-marca.png');
+}
+.paragraph--Information__item--2::before {
+  background-image: url('https://epartner.vteximg.com.br/arquivos/icono-formas-de-pago.png');
+}
+.paragraph--Information__item--3::before {
+  background-image: url('https://epartner.vteximg.com.br/arquivos/icono-envios-nacionales.png');
+}
+.paragraph--Information__item--4::before {
+  background-image: url('https://epartner.vteximg.com.br/arquivos/icono-compra-garantizada.png');
+}
+
+/* ------------------------------- */
 .container--deals {
   color: #ffffff;
   text-align: center;
@@ -31,7 +74,7 @@
   max-width: 540px;
   margin: 0 16px;
   padding-top: 120px;
-  color: #03034E;
+  color: #03034e;
 }
 
 .container--question .strong {
@@ -45,7 +88,7 @@
   max-width: 540px;
   padding-top: 36px;
   padding-bottom: 84px;
-  color: #03034E;
+  color: #03034e;
 }
 
 .container--link .strong {
@@ -58,11 +101,11 @@
   text-decoration: none;
   font-size: 36px;
   font-weight: 300;
-  color: #03034E;
+  color: #03034e;
 }
 
 .container--title {
-  color: #03034E;
+  color: #03034e;
   font-size: 28px;
   font-weight: 700;
 }
@@ -78,7 +121,7 @@
   }
 
   .container--title {
-    color: #03034E;
+    color: #03034e;
     font-size: 40px;
     font-weight: 700;
     max-width: 60%;

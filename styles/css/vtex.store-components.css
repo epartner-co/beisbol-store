@@ -1,3 +1,89 @@
+/* ------------------------------- */
+/* //* Home */
+/* ------------------------------- */
+.container {
+  padding: 0;
+}
+/* ! Top Slide */
+.infoCardSubhead--TopSlide__Item {
+  margin-top: 0;
+  color: #df209d;
+  font-family: Urbanist;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.infoCardHeadline--TopSlide__Item {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-family: Urbanist;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.infoCardHeadline--TopSlide__Item::before {
+  content: '';
+  margin-bottom: 20px;
+  width: 100px;
+  height: 150px;
+  background-image: url('https://epartner.vteximg.com.br/arquivos/mobile-imagen-banner-principal.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.infoCardCallActionContainer--TopSlide__Item {
+  margin-bottom: 40px;
+}
+.infoCardCallActionContainer--TopSlide__Item
+  :global(.vtex-button) {
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+  background-color: #001689;
+  border-color: #001689;
+  border-radius: 51px;
+}
+/* ! Category slide */
+.infoCardContainer--CategorySlide__Item {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.infoCardCallActionContainer--CategorySlide__Item {
+  margin: 0;
+}
+.infoCardTextContainer--CategorySlide__Item {
+  padding: 0;
+  width: 100%;
+}
+.infoCardCallActionContainer--CategorySlide__Item
+  :global(.vtex-button) {
+  display: flex;
+  color: #8f8f8f;
+  background-color: transparent;
+  border-color: transparent;
+  font-family: Urbanist;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+}
+.infoCardCallActionContainer--CategorySlide__Item
+  :global(.vtex-button__label) {
+  padding: 0;
+}
+.infoCardImage--CategorySlide__Item {
+  height: 100px;
+  border-radius: 5px;
+}
+
+/* ------------------------------- */
 .notificationBarContainer {
   background-color: #e6f1e6;
   color: #03034e;
@@ -34,13 +120,15 @@
   color: #fff;
 }
 
-.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+.inputGroup
+  :global(.vtex-styleguide-9-x-hideDecorators) {
   background-color: transparent;
   color: #fff;
   border: none;
 }
 
-.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+.inputGroup
+  :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
   color: #fff;
   font-size: 16px;
 }
@@ -74,11 +162,13 @@
     font-size: 40px;
   }
 
-  .infoCardContainer--info-card-home .infoCardTextContainer {
+  .infoCardContainer--info-card-home
+    .infoCardTextContainer {
     width: 30%;
   }
 
-  .infoCardContainer--info-card-home .infoCardImageContainer {
+  .infoCardContainer--info-card-home
+    .infoCardImageContainer {
     width: 70%;
   }
 
@@ -88,19 +178,23 @@
   }
 }
 
-.productImagesContainer--quickview .carouselContainer {
+.productImagesContainer--quickview
+  .carouselContainer {
   justify-content: flex-start;
 }
 
-.productImagesContainer--quickview .productImageTag {
+.productImagesContainer--quickview
+  .productImageTag {
   object-fit: cover !important;
 }
 
-.productImagesContainer--quickview .carouselGaleryThumbs {
+.productImagesContainer--quickview
+  .carouselGaleryThumbs {
   display: none;
 }
 
-.productImagesContainer--quickview .carouselGaleryCursor {
+.productImagesContainer--quickview
+  .carouselGaleryCursor {
   margin: 0;
   padding: 0;
   width: 100%;

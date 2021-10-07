@@ -11,6 +11,7 @@
       "add-to-cart-button"
     ]
   },
+
   "flex-layout.col#productRating": {
     "props": {
       "blockClass": "productRating"
@@ -81,9 +82,7 @@
   },
   "product-price-savings#summary": {
     "props": {
-      "markers": [
-        "discount"
-      ],
+      "markers": ["discount"],
       "blockClass": "summary"
     }
   }

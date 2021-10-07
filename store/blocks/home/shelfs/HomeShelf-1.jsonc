@@ -1,0 +1,40 @@
+{
+  "flex-layout.col#Shelf-1": {
+    "props": {
+      "blockClass": ["Shelf", "Shelf--1"]
+    },
+    "children": [
+      "list-context.product-list#Shelf-1"
+    ]
+  },
+
+  // * Container
+  "list-context.product-list#Shelf-1": {
+    "props": {
+      "blockClass": [
+        "Shelf__container",
+        "Shelf__container--1"
+      ],
+      "orderBy": "OrderByTopSaleDESC"
+    },
+    "children": ["slider-layout#Shelf-1"],
+    "blocks": ["product-summary.shelf"]
+  },
+
+  // * Slider Shelf
+  "slider-layout#Shelf-1": {
+    "props": {
+      "blockClass": [
+        "Shelf__Slider",
+        "Shelf__Slider--1"
+      ],
+      "showPaginationDots": "never",
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  }
+}

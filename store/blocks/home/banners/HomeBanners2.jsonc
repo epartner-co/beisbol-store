@@ -1,0 +1,47 @@
+{
+  "flex-layout.col#Banners2": {
+    "props": {
+      "blockClass": ["Banners", "Banners--bottom"]
+    },
+    "children": [
+      "info-card#BannersBottom--item-1",
+      "info-card#BannersBottom--item-2"
+    ]
+  },
+
+  // * Info card 1
+  "info-card#BannersBottom--item-1": {
+    "props": {
+      "blockClass": [
+        "BannerItem__container",
+        "BannerBottom__item",
+        "BannerBottom__item--1"
+      ],
+      "id": "BannersBottom--item-1",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      // "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "mobileImageUrl": "https://epartner.vteximg.com.br/arquivos/mobile-imagen-banner-tranquilidad-de-madres.png",
+      "callToActionText": "Ver producto",
+      "callToActionUrl": "#"
+    }
+  },
+
+  // * Info card 2
+  "info-card#BannersBottom--item-2": {
+    "props": {
+      "blockClass": [
+        "BannerItem__container",
+        "BannerBottom__item",
+        "BannerBottom__item--1"
+      ],
+      "id": "BannersBottom--item-2",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      // "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "mobileImageUrl": "https://epartner.vteximg.com.br/arquivos/mobile-banner-nueva-presentacion.png",
+      "headline": "¡Nueva presentación!",
+      "callToActionMode": "none"
+    }
+  }
+}

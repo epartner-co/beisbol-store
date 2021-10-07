@@ -1,8 +1,41 @@
+/* ------------------------------- */
+/* //* Home */
+/* ------------------------------- */
+.sliderArrows {
+  padding: 5px;
+  color: #ededed;
+  background-color: #ffffff !important;
+  border-radius: 50%;
+  box-shadow: 0px 0px 13px 0px #00000026;
+  transition: 0.3s;
+}
+.sliderArrows:hover {
+  color: #001689;
+}
+/* ! Top Slide */
+.paginationDot--TopSlide__Container {
+  background-color: #c4c4c4;
+}
+.paginationDot--TopSlide__Container--isActive {
+  background-color: #696969;
+}
+.flexRowContent--Home__CategorySlide {
+  margin-top: 30px;
+}
+/* ! Slide category */
+.slideChildrenContainer--CategorySlide__Container {
+  padding: 0 5px;
+}
+.sliderArrows--CategorySlide__Container {
+  transform: translateY(-20px);
+}
+
+/* ------------------------------- */
 .sliderLayoutContainer {
   justify-content: center;
 }
 .sliderLayoutContainer--carousel {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .sliderTrackContainer {
@@ -10,8 +43,8 @@
 }
 
 .paginationDotsContainer {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .layoutContainer--shelf {
@@ -22,6 +55,6 @@
 
 .slide--shelf {
   margin-bottom: 25px;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
