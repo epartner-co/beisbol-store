@@ -1,0 +1,16 @@
+/* ------------------------------- */
+/* //* Home */
+/* ------------------------------- */
+/* ! Vitrina 1 */
+.buttonDataContainer--summary {
+  font-family: Urbanist;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+}
+.buttonDataContainer--summary
+  :global(.vtex-button__label) {
+  padding: 10px !important;
+}
+/* ------------------------------- */

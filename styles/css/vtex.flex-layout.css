@@ -21,6 +21,46 @@
 .flexRowContent--Home__CategorySlide {
   margin-top: 30px;
 }
+/* ! Vitrina 1 */
+.flexRowContent--ProductShelfHome {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flexRowContent--ProductShelfHome
+  .stretchChildrenWidth:first-child {
+  padding: 0 10px 0 0;
+  width: auto !important;
+}
+.flexRowContent--ProductShelfHome
+  .stretchChildrenWidth:first-child
+  :global(.vtex-product-price-1-x-listPrice) {
+  margin-bottom: 0;
+  color: #CBCBCB;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+}
+
+.flexRowContent--ProductShelfHome
+  .stretchChildrenWidth:last-child {
+  width: auto !important;
+  background-color: #acb8f5;
+  border-radius: 3px;
+}
+.flexRowContent--ProductShelfHome
+  .stretchChildrenWidth:last-child
+  :global(.vtex-product-price-1-x-savings) {
+  margin: 5px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+}
 
 /* ------------------------------- */
 .flexRowContent--menu-link,

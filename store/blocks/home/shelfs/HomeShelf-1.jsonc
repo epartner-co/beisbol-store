@@ -18,7 +18,7 @@
       "orderBy": "OrderByTopSaleDESC"
     },
     "children": ["slider-layout#Shelf-1"],
-    "blocks": ["product-summary.shelf"]
+    "blocks": ["product-summary.shelf#HomeVitrinas"]
   },
 
   // * Slider Shelf
@@ -28,7 +28,7 @@
         "Shelf__Slider",
         "Shelf__Slider--1"
       ],
-      "showPaginationDots": "never",
+      "showPaginationDots": "always",
       "itemsPerPage": {
         "desktop": 5,
         "tablet": 3,

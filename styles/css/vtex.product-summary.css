@@ -1,18 +1,53 @@
-.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+/* ------------------------------- */
+/* //* Home */
+/* ------------------------------- */
+/* ! Vitrina 1 */
+.element--ProductShelfHome {
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.element--ProductShelfHome .brandName {
+  color: #001689;
+  font-family: Urbanist;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+}
+.element--ProductShelfHome :global(.vtex-button) {
+  background-color: #001689;
+  border-color: #001689;
+  border-radius: 100px;
+}
+.element--ProductShelfHome
+  :global(.vtex-button__label) {
+  padding: 10px 0 !important;
+}
+
+/* ------------------------------- */
+.skuSelectorContainer--quickview
+  .skuSelectorItemImage
+  .frameAround,
+.skuSelectorContainer--quickview
+  .skuSelectorItemImage
+  .skuSelectorInternalBox {
   border-radius: 50%;
 }
 
-.container :global(.vtex-modal-layout-0-x-triggerContainer) {
+.container
+  :global(.vtex-modal-layout-0-x-triggerContainer) {
   opacity: 0;
   transition: opacity 200ms ease-in-out;
 }
 
-.container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
+.container:hover
+  :global(.vtex-modal-layout-0-x-triggerContainer) {
   opacity: 1;
 }
 
 @media screen and (max-width: 40em) {
-  .container :global(.vtex-modal-layout-0-x-triggerContainer) {
+  .container
+    :global(.vtex-modal-layout-0-x-triggerContainer) {
     display: none;
   }
 }
@@ -26,7 +61,7 @@
 .brandName {
   font-weight: 600;
   font-size: 18px;
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 
 .container {
