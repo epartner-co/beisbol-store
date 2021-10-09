@@ -30,6 +30,31 @@
   transform: translateY(-20px);
 }
 
+/* ! Vitrina */
+.sliderTrackContainer--Shelf__Slider {
+  margin-bottom: 50px;
+}
+.paginationDot--Shelf__Slider {
+  background-color: #c4c4c4;
+}
+.paginationDot--Shelf__Slider--isActive {
+  background-color: #001689;
+}
+
+/* ------------------------------- */
+/* //? Medias Query */
+/* ------------------------------- */
+@media (min-width: 1200px) {
+  /* ! Category Slide */
+  .sliderTrackContainer--CategorySlide__Container {
+    padding: 0 100px;
+  }
+  /* ! Vitrina */
+  .sliderTrackContainer--Shelf__Slider {
+    padding: 0 100px;
+  }
+}
+
 /* ------------------------------- */
 .sliderLayoutContainer {
   justify-content: center;

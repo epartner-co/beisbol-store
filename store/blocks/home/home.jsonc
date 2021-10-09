@@ -13,7 +13,6 @@
       "flex-layout.row#Banners",
       "rich-text#Title-2",
       "flex-layout.row#Shelf-2",
-      "rich-text#Title-moms",
       "flex-layout.row#Banners2",
       "rich-text#Title-3",
       "flex-layout.row#Shelf-3",
@@ -105,14 +104,6 @@
       ]
     },
     "children": ["flex-layout.col#Shelf-2"]
-  },
-
-  // *  Title Moms
-  "rich-text#Title-moms": {
-    "props": {
-      "blockClass": ["Home__Title", "Title--mom"],
-      "text": "## ¡Tranquilidad de Madres!"
-    }
   },
 
   // * Banners 2

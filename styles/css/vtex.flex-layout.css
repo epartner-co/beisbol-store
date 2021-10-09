@@ -36,14 +36,13 @@
   .stretchChildrenWidth:first-child
   :global(.vtex-product-price-1-x-listPrice) {
   margin-bottom: 0;
-  color: #CBCBCB;
+  color: #cbcbcb;
   font-family: Urbanist;
-  font-size: 20px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
   text-align: left;
 }
-
 .flexRowContent--ProductShelfHome
   .stretchChildrenWidth:last-child {
   width: auto !important;
@@ -56,10 +55,70 @@
   margin: 5px;
   color: #ffffff;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   text-align: left;
+}
+
+/* ! Top Banner */
+.flexRowContent--Home__Banners--1 {
+  padding: 40px 10px;
+}
+.flexColChild--Banners--top:first-child {
+  margin-bottom: 10px;
+}
+
+/* ------------------------------- */
+/* //? Medias Query */
+/* ------------------------------- */
+@media (min-width: 640px) {
+  /* ! Home information  */
+  .flexColChild--Information__Container:first-child,
+  .flexColChild--Information__Container {
+    width: 25%;
+    margin-bottom: 0;
+  }
+  .flexRowContent--Home__Information {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  /* ! Banners top */
+  .flexCol--Banners--top {
+    flex-direction: row;
+  }
+  .flexColChild--Banners--top {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* ! Home Information */
+  .flexCol--Information__Container {
+    margin: 0 150px;
+  }
+  .flexRowContent--Home__Information {
+    background-color: #ededed;
+  }
+
+  /* ! Top Banners */
+  .flexRowContent--Home__Banners--1 {
+    padding: 70px 100px 50px;
+  }
+
+  /* ! Bottom Banners */
+  .flexCol--Banners--bottom {
+    flex-direction: row;
+  }
+  .flexColChild--Banners--bottom:first-child {
+    width: 30%;
+  }
+  .flexColChild--Banners--bottom:last-child {
+    width: 70%;
+  }
 }
 
 /* ------------------------------- */

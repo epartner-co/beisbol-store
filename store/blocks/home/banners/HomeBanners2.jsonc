@@ -4,9 +4,30 @@
       "blockClass": ["Banners", "Banners--bottom"]
     },
     "children": [
-      "info-card#BannersBottom--item-1",
+      "flex-layout.col#BannersBottom--item-1-Container",
       "info-card#BannersBottom--item-2"
     ]
+  },
+
+  // * Info Card 1 Container
+  "flex-layout.col#BannersBottom--item-1-Container": {
+    "props": {
+      "blockClass": [
+        "BannersBottom--item-1-Container"
+      ]
+    },
+    "children": [
+      "rich-text#Title-moms",
+      "info-card#BannersBottom--item-1"
+    ]
+  },
+
+  // *  Title Moms
+  "rich-text#Title-moms": {
+    "props": {
+      "blockClass": ["Home__Title", "Title--mom"],
+      "text": "## ¡Tranquilidad de Madres!"
+    }
   },
 
   // * Info card 1
@@ -33,14 +54,15 @@
       "blockClass": [
         "BannerItem__container",
         "BannerBottom__item",
-        "BannerBottom__item--1"
+        "BannerBottom__item--2"
       ],
       "id": "BannersBottom--item-2",
       "isFullModeStyle": true,
       "textPosition": "left",
       // "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
       "mobileImageUrl": "https://epartner.vteximg.com.br/arquivos/mobile-banner-nueva-presentacion.png",
-      "headline": "¡Nueva presentación!",
+      "headline": "¡Nueva",
+      "subhead": "presentación!",
       "callToActionMode": "none"
     }
   }

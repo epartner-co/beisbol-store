@@ -1,15 +1,22 @@
 /* ------------------------------- */
 /* //* Home */
 /* ------------------------------- */
-/* ! Vitrina 1 */
+/* ! Vitrina */
 .element--ProductShelfHome {
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0;
+  transition: 0.3s;
+}
+.element--ProductShelfHome:hover {
+  box-shadow: 0px 0px 15px 0px #00000026;
 }
 .element--ProductShelfHome .brandName {
   color: #001689;
   font-family: Urbanist;
-  font-size: 30px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
   text-align: left;
@@ -22,6 +29,21 @@
 .element--ProductShelfHome
   :global(.vtex-button__label) {
   padding: 10px 0 !important;
+}
+.image {
+  width: 100%;
+  min-height: 290px;
+  object-fit: contain;
+}
+
+/* ------------------------------- */
+/* //? Medias Query */
+/* ------------------------------- */
+@media (min-width: 1200px) {
+  /* ! Vitrina */
+  .brandName {
+    font-size: 17px;
+  }
 }
 
 /* ------------------------------- */

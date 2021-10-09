@@ -62,6 +62,44 @@
 }
 .infoCardCallActionContainer--CategorySlide__Item {
   margin: 0;
+  text-decoration: none;
+}
+.infoCardImageContainer--CategorySlide__Item {
+  position: relative;
+  width: 100%;
+}
+.infoCardImageContainer--CategorySlide__Item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  width: 100%;
+  background-color: #00000070;
+  background-size: initial;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  transition: 0.3s;
+  opacity: 0;
+}
+.infoCardImageContainer--CategorySlide__Item--1::after {
+  background-image: url('https://epartner.vteximg.com.br/arquivos/icono-categoria-desinfectantes-hover.png');
+}
+.infoCardImageContainer--CategorySlide__Item--2::after {
+  background-image: url('https://epartner.vteximg.com.br/arquivos/icono-categoria-familiar-hover.png');
+}
+.infoCardImageContainer--CategorySlide__Item--3::after {
+  background-image: url('https://epartner.vteximg.com.br/arquivos/icono-categoria-hogar-hover.png');
+  background-size: contain;
+}
+.infoCardImageContainer--CategorySlide__Item--4::after {
+  background-image: url('https://epartner.vteximg.com.br/arquivos/icono-categoria-clinico-hover.png');
+}
+.infoCardContainer--CategorySlide__Item:hover
+  .infoCardImageContainer--CategorySlide__Item::after {
+  opacity: 1;
 }
 .infoCardTextContainer--CategorySlide__Item {
   padding: 0;
@@ -77,14 +115,320 @@
   font-size: 15px;
   font-weight: 500;
   text-align: left;
+  transition: 0.3s;
+}
+.infoCardContainer--CategorySlide__Item:hover
+  .infoCardCallActionContainer--CategorySlide__Item
+  :global(.vtex-button) {
+  color: #001689;
+  font-weight: 700;
 }
 .infoCardCallActionContainer--CategorySlide__Item
   :global(.vtex-button__label) {
   padding: 0;
 }
 .infoCardImage--CategorySlide__Item {
+  width: 100%;
   height: 100px;
   border-radius: 5px;
+}
+
+/* ! Top Banners */
+.infoCardContainer--BannerTop__item {
+  border-radius: 5px;
+}
+.infoCardHeadline--BannerTop__item--1 {
+  color: white;
+  font-family: Urbanist;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+}
+.infoCardSubhead--BannerTop__item--1 {
+  margin-top: 0;
+  padding: 0 9px;
+  color: white;
+  background-color: #001689;
+  font-family: Urbanist;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+}
+.infoCardCallActionContainer--BannerTop__item--1
+  :global(.vtex-button) {
+  background-color: transparent;
+  border-width: 1px;
+  border-radius: 100px;
+}
+.infoCardCallActionContainer--BannerTop__item--1
+  :global(.vtex-button__label) {
+  padding: 15px 20px !important;
+  color: #001689;
+  font-family: Urbanist;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
+.infoCardHeadline--BannerTop__item--2 {
+  color: white;
+  font-family: Urbanist;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+}
+.infoCardCallActionContainer--BannerTop__item--2
+  :global(.vtex-button) {
+  background-color: white;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 100px;
+}
+.infoCardCallActionContainer--BannerTop__item--2
+  :global(.vtex-button__label) {
+  padding: 15px 20px !important;
+  color: #001689;
+  font-family: Urbanist;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ! Bottom banners */
+.infoCardTextContainer--BannerBottom__item--1 {
+  justify-content: center;
+  align-items: center;
+}
+.infoCardContainer--BannerBottom__item--1 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+.infoCardCallActionContainer--BannerBottom__item--1
+  :global(.vtex-button) {
+  background-color: #001689;
+  border-width: 1px;
+  border-radius: 100px;
+}
+.infoCardCallActionContainer--BannerBottom__item--1
+  :global(.vtex-button__label) {
+  padding: 15px 20px !important;
+  color: white;
+  font-family: Urbanist;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
+.infoCardContainer--BannerBottom__item--2 {
+  display: flex;
+  align-items: flex-end;
+  padding: 30px 10px;
+  width: 100%;
+}
+.infoCardContainer--BannerBottom__item--2::before {
+  content: '';
+  width: 40%;
+  height: 210px;
+  background-image: url('https://epartner.vteximg.com.br/arquivos/mobile-imagen-banner-nueva-presentacion.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.infoCardTextContainer--BannerBottom__item--2 {
+  margin-right: 0;
+  width: 60%;
+}
+.infoCardHeadline--BannerBottom__item--2 {
+  margin-top: 0;
+  padding: 5px 10px;
+  color: #001689;
+  background-color: white;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+.infoCardSubhead--BannerBottom__item--2 {
+  margin-top: 5px;
+  padding: 5px 10px;
+  color: #001689;
+  background-color: white;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+/* ! Newsletter */
+.newsletter--Newsletter {
+  margin-top: 40px;
+  background-image: url('https://epartner.vteximg.com.br/arquivos/mobile-banner-newsletter.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+.container--Newsletter {
+  padding: 40px 10px;
+}
+.inputGroup--Newsletter {
+  flex-direction: column;
+}
+.label--Newsletter {
+  display: flex;
+  flex-direction: column;
+  color: #001689;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.label--Newsletter::before {
+  content: 'Recíbe 20% DTCO en tu primera compra';
+  margin-bottom: 10px;
+  color: #001689;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.label--Newsletter .inputGroup {
+  padding: 0 25px;
+  color: #c5c5c5;
+  background-color: white;
+  border-radius: 100px;
+  font-family: Roboto;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  text-align: left;
+  outline: none;
+}
+.label--Newsletter .inputGroup::placeholder {
+  color: #c5c5c5;
+}
+.inputGroup--Newsletter
+  :global(.vtex-input)
+  :global(.vtex-input-prefix__group) {
+  border: none;
+}
+.buttonContainer--Newsletter {
+  padding-top: 20px;
+}
+.inputGroup--Newsletter
+  :global(.vtex-input)
+  :global(.vtex-styleguide-9-x-input) {
+  color: #c5c5c5;
+  background-color: white;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  text-align: left;
+  border-radius: 100px;
+}
+.inputGroup--Newsletter
+  :global(.vtex-input)
+  :global(.vtex-styleguide-9-x-input)::placeholder {
+  color: #c5c5c5;
+  font-size: 20px;
+}
+.inputGroup
+  .buttonContainer--Newsletter
+  :global(.vtex-button) {
+  background-color: #001689;
+  border-width: 1px;
+  border-radius: 100px;
+}
+.inputGroup
+  .buttonContainer--Newsletter
+  :global(.vtex-button__label) {
+  padding: 10px 20px !important;
+  color: white;
+  font-family: Urbanist;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* ------------------------------- */
+/* //? Medias Query */
+/* ------------------------------- */
+@media (min-width: 640px) {
+  /* ! Banners bottom */
+  .infoCardTextContainer--BannerTop__item--1 {
+    margin-right: 0;
+    width: 50%;
+  }
+  .infoCardTextContainer--BannerBottom__item--2 {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  /* ! Top Slider */
+  .infoCardHeadline--TopSlide__Item::before {
+    width: 150px;
+    height: 225px;
+  }
+
+  /* ! Newsletter */
+  .newsletter--Newsletter {
+    background-size: cover;
+  }
+}
+
+@media (min-width: 900px) {
+  /* ! Top banners */
+  .infoCardContainer--BannerTop__item {
+    width: 100%;
+    height: 100%;
+  }
+  .infoCardTextContainer--BannerTop__item {
+    width: 70%;
+  }
+  .infoCardCallActionContainer--BannerTop__item--2 {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* ! Category Slide */
+  .infoCardContainer--CategorySlide__Item {
+    width: 100%;
+  }
+  .infoCardImage--CategorySlide__Item {
+    height: 150px;
+  }
+
+  /* ! Bottom Banners */
+  .infoCardContainer--BannerBottom__item--1 {
+    flex-direction: column-reverse;
+  }
+  .infoCardImageContainer--BannerBottom__item--1 {
+    width: 70%;
+  }
+  .infoCardContainer--BannerBottom__item--2 {
+    height: 100%;
+  }
+
+  /* ! Newsletter */
+  .container--Newsletter {
+    padding: 80px 10px;
+  }
 }
 
 /* ------------------------------- */
@@ -103,20 +447,20 @@
   padding: 0px;
 }
 
-.newsletter {
+/* .newsletter {
   background-color: #03054e;
   max-width: 1528px;
   margin: 0 auto;
-}
+} */
 
 .newsletter .container {
   padding: 60px 10px;
 }
 
-.label {
+/* .label {
   color: #fff;
   font-size: 26px;
-}
+} */
 
 .inputGroup {
   padding-bottom: 4px;
@@ -137,16 +481,12 @@
   font-size: 16px;
 }
 
-.inputGroup :global(.vtex-button) {
+/* .inputGroup :global(.vtex-button) {
   background-color: transparent;
   color: #fff;
   border: none;
   margin-right: -24px;
-}
-
-.buttonContainer {
-  padding-top: 0px;
-}
+} */
 
 .imageElement--storePrint {
   max-height: 300px;
@@ -158,14 +498,6 @@
 }
 
 @media only screen and (min-width: 640px) {
-  .newsletter .container {
-    padding: 140px;
-  }
-
-  .label {
-    font-size: 40px;
-  }
-
   .infoCardContainer--info-card-home
     .infoCardTextContainer {
     width: 30%;

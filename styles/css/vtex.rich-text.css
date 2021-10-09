@@ -12,7 +12,7 @@
   width: 100%;
   color: #001689;
   font-family: Urbanist;
-  font-size: 15px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
@@ -74,6 +74,54 @@
 }
 .heading--Home__Title::after {
   margin-left: 10px;
+}
+
+/* ! Banners Bottom */
+.wrapper--Title--mom {
+  width: 100%;
+}
+.heading--Title--mom {
+  margin: 0;
+  margin-top: 40px;
+  padding: 20px 0;
+  width: 100%;
+  color: white;
+  background-color: #a056ff;
+}
+.heading--Title--mom::before,
+.heading--Title--mom::after {
+  display: none;
+}
+
+/* ------------------------------- */
+/* //? Medias Query */
+/* ------------------------------- */
+@media (min-width: 640px) {
+  /* ! Home information  */
+  .paragraph--Information__item {
+    margin: 30px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* ! Home information  */
+  .paragraph--Information__item {
+    font-size: 17px;
+  }
+  .paragraph--Information__item::before {
+    margin-right: 15px;
+  }
+  .heading--Title--destacados-new {
+    margin-top: 60px;
+  }
+
+  /* ! Bottom Banners */
+  .heading--Title--mom {
+    margin-top: 0;
+  }
+  .container--Title--mom {
+    height: 100%;
+  }
 }
 
 /* ------------------------------- */
