@@ -1,8 +1,34 @@
 /* ------------------------------- */
+/* //* Header */
+/* ------------------------------- */
+.logoContainer.sizeMobile {
+  display: block;
+  padding: 0 10px;
+  padding-right: 0;
+}
+.logoImage {
+  width: 100px;
+}
+/* ------------------------------- */
+/* //* Footer */
+/* ------------------------------- */
+.imageElement--Footer__image--payments {
+  width: 90%;
+}
+.imageElement--Footer__image--development {
+  width: 150px;
+}
+.imageElement--Footer__image--technology {
+  width: 105px;
+}
+/* ------------------------------- */
 /* //* Home */
 /* ------------------------------- */
 .container {
+  margin: 0;
   padding: 0;
+  width: 100%;
+  max-width: 100%;
 }
 /* ! Top Slide */
 .infoCardContainer--TopSlide__Item {
@@ -406,6 +432,25 @@
 }
 
 @media (min-width: 1200px) {
+  /* ! Header */
+  .searchBarContainer {
+    width: 75%;
+  }
+  .autoCompleteOuterContainer
+    :global(.vtex-input-prefix__group) {
+    color: black;
+    font-family: Urbanist;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    border-color: #f2f2f2;
+    border-radius: 50px;
+  }
+  .searchBarIcon--search {
+    color: #001689;
+  }
+
   /* ! Category Slide */
   .infoCardContainer--CategorySlide__Item {
     width: 100%;

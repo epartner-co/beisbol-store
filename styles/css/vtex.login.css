@@ -1,0 +1,32 @@
+/* ------------------------------- */
+/* //* Header */
+/* ------------------------------- */
+.label {
+  color: #565656;
+  font-family: Urbanist;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #565656;
+  text-transform: capitalize;
+  display: none;
+}
+.container :global(.vtex-button__label)::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-image: url('https://epartner.vteximg.com.br/arquivos/icono-user.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+/* ------------------------------- */
+/* //? Medias Query */
+/* ------------------------------- */
+@media (min-width: 1200px) {
+  /* ! Header */
+  .label {
+    display: block;
+  }
+}
+/* ------------------------------- */

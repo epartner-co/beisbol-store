@@ -1,0 +1,278 @@
+{
+  // * Footer Mobile
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#FooterPromotional",
+      "flex-layout.row#FooterSocials",
+      "flex-layout.row#FooterPaymentMethods",
+      "flex-layout.row#FooterInformation",
+      "rich-text#CopyRight"
+
+      // "flex-layout.row#1-footer-mobile",
+      // "flex-layout.row#2-footer-mobile"
+    ]
+  },
+
+  // ! Promotional section
+  "flex-layout.row#FooterPromotional": {
+    "props": {
+      "blockClass": ["Footer-Promotional"]
+    },
+    "children": [
+      "rich-text#TitlePromotions",
+      "rich-text#Promotion1",
+      "rich-text#Promotion2"
+    ]
+  },
+  // * Title promotions
+  "rich-text#TitlePromotions": {
+    "props": {
+      "blockClass": [
+        "FooterTitle",
+        "FooterTitle--promotions"
+      ],
+      "text": "Fechas promocionales"
+    }
+  },
+  // * Promotion text 1
+  "rich-text#Promotion1": {
+    "props": {
+      "blockClass": [
+        "Footer__Promotion",
+        "Footer__Promotion--1"
+      ],
+      "text": "[Cyber Days](#)"
+    }
+  },
+  // * Promotion text 2
+  "rich-text#Promotion2": {
+    "props": {
+      "blockClass": [
+        "Footer__Promotion",
+        "Footer__Promotion--2"
+      ],
+      "text": "[Black Friday](#)"
+    }
+  },
+
+  // ! Socials Section
+  "flex-layout.row#FooterSocials": {
+    "props": {
+      "blockClass": ["Footer-Socials"]
+    },
+    "children": [
+      "rich-text#TitleSocials",
+      "flex-layout.col#FooterSocials"
+    ]
+  },
+  // * Title socials
+  "rich-text#TitleSocials": {
+    "props": {
+      "blockClass": [
+        "FooterTitle",
+        "FooterTitle--socials"
+      ],
+      "text": "Redes sociales"
+    }
+  },
+  // * Socials images container
+  "flex-layout.col#FooterSocials": {
+    "props": {
+      "blockClass": ["Footer-Promotional__Images"]
+    },
+    "children": [
+      "image#Facebook",
+      "image#Instagram",
+      "image#Twitter"
+    ]
+  },
+  // * Facebook Icon
+  "image#Facebook": {
+    "props": {
+      "blockClass": [
+        "Footer__image",
+        "Footer__image--facebook"
+      ],
+      "src": "https://epartner.vteximg.com.br/arquivos/facebook-icon.png"
+    }
+  },
+  // * Instagram Icon
+  "image#Instagram": {
+    "props": {
+      "blockClass": [
+        "Footer__image",
+        "Footer__image--instagram"
+      ],
+      "src": "https://epartner.vteximg.com.br/arquivos/instagram-icon.png"
+    }
+  },
+  // * Twitter Icon
+  "image#Twitter": {
+    "props": {
+      "blockClass": [
+        "Footer__image",
+        "Footer__image--Twitter"
+      ],
+      "src": "https://epartner.vteximg.com.br/arquivos/twitter-icon.png"
+    }
+  },
+
+  // ! Payments Section
+  "flex-layout.row#FooterPaymentMethods": {
+    "props": {
+      "blockClass": ["Footer-Payment"]
+    },
+    "children": [
+      "rich-text#TitlePayments",
+      "image#Payments"
+    ]
+  },
+  // * Title Payments
+  "rich-text#TitlePayments": {
+    "props": {
+      "blockClass": [
+        "FooterTitle",
+        "FooterTitle--payments"
+      ],
+      "text": "Medios de pago"
+    }
+  },
+  // * Payments image
+  "image#Payments": {
+    "props": {
+      "blockClass": [
+        "Footer__image",
+        "Footer__image--payments"
+      ],
+      "src": "https://epartner.vteximg.com.br/arquivos/payments-image.png"
+    }
+  },
+
+  // ! Development Section
+  "flex-layout.row#FooterInformation": {
+    "props": {
+      "blockClass": ["Footer-development"]
+    },
+    "children": [
+      "flex-layout.col#FooterInformation--left",
+      "flex-layout.col#FooterInformation--right"
+    ]
+  },
+  // * Section left
+  "flex-layout.col#FooterInformation--left": {
+    "props": {
+      "blockClass": [
+        "Footer-development__container",
+        "Footer-development__container--left"
+      ]
+    },
+    "children": [
+      "rich-text#Development",
+      "image#Development"
+    ]
+  },
+  // * Title Development
+  "rich-text#Development": {
+    "props": {
+      "blockClass": [
+        "FooterTitle",
+        "FooterTitle--development"
+      ],
+      "text": "Desarrollado por"
+    }
+  },
+  // * Development image
+  "image#Development": {
+    "props": {
+      "blockClass": [
+        "Footer__image",
+        "Footer__image--development"
+      ],
+      "src": "https://epartner.vteximg.com.br/arquivos/logo-epartner-color.png"
+    }
+  },
+
+  // * Section right
+  "flex-layout.col#FooterInformation--right": {
+    "props": {
+      "blockClass": [
+        "Footer-development__container",
+        "Footer-development__container--right"
+      ]
+    },
+    "children": [
+      "rich-text#Technology",
+      "image#Technology"
+    ]
+  },
+  // * Title Technology
+  "rich-text#Technology": {
+    "props": {
+      "blockClass": [
+        "FooterTitle",
+        "FooterTitle--technology"
+      ],
+      "text": "Tecnología"
+    }
+  },
+  // * Technology image
+  "image#Technology": {
+    "props": {
+      "blockClass": [
+        "Footer__image",
+        "Footer__image--technology"
+      ],
+      "src": "https://epartner.vteximg.com.br/arquivos/logo-vtex-color.png"
+    }
+  },
+
+  // ! CopyRight
+  "rich-text#CopyRight": {
+    "props": {
+      "blockClass": ["CopyRight"],
+      "text": "Copyright Beisbol 2021"
+    }
+  },
+
+  "flex-layout.row#1-footer-mobile": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4
+    },
+    "children": [
+      "vtex.menu@2.x:menu#footer-mobile"
+    ]
+  },
+
+  "flex-layout.row#2-footer-mobile": {
+    "children": [
+      "flex-layout.col#footer-1-mobile"
+    ],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+
+  "flex-layout.col#footer-1-mobile": {
+    "children": [
+      "accepted-payment-methods",
+      "social-networks",
+      "rich-text#footer-mobile"
+    ],
+    "props": {
+      "blockClass": "payment-methods",
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "rowGap": 4
+    }
+  },
+
+  "rich-text#footer-mobile": {
+    "props": {
+      "text": "All stock and product photos are from photos.icons8.com",
+      "blockClass": "footer"
+    }
+  }
+}

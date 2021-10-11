@@ -50,8 +50,14 @@
     padding: 0 100px;
   }
   /* ! Vitrina */
-  .sliderTrackContainer--Shelf__Slider {
+  .sliderLayoutContainer--Shelf__Slider {
     padding: 0 100px;
+  }
+  .sliderLeftArrow--Shelf__Slider {
+    left: 75px;
+  }
+  .sliderRightArrow--Shelf__Slider {
+    right: 75px;
   }
 }
 
@@ -61,10 +67,6 @@
 }
 .sliderLayoutContainer--carousel {
   background-color: #f0f0f0;
-}
-
-.sliderTrackContainer {
-  max-width: 1520px;
 }
 
 .paginationDotsContainer {

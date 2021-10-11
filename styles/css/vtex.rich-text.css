@@ -1,4 +1,76 @@
 /* ------------------------------- */
+/* //* Header */
+/* ------------------------------- */
+.container--Header-top-text {
+  background-color: #ededed;
+}
+.wrapper--Header-top-text {
+  width: 100%;
+}
+.paragraph--Header-top-text {
+  color: #001689;
+  font-family: Urbanist;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+}
+.link--Header-top-text {
+  color: #001689;
+  text-decoration: none;
+}
+/* ------------------------------- */
+/* //* Footer */
+/* ------------------------------- */
+.wrapper--FooterTitle {
+  width: 100%;
+}
+.paragraph--FooterTitle {
+  color: #001689;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+}
+.wrapper--Footer__Promotion {
+  width: 100%;
+}
+.paragraph--Footer__Promotion {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: Urbanist;
+  font-size: 17px;
+  font-style: normal;
+  text-align: center;
+}
+.link--Footer__Promotion {
+  color: #8f8f8f;
+  text-decoration: none;
+}
+.paragraph--FooterTitle--development {
+  margin-bottom: 0;
+}
+.paragraph--FooterTitle--technology {
+  margin-bottom: 0;
+}
+.wrapper--CopyRight {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #c4c4c4;
+  text-align: center;
+}
+.paragraph--CopyRight {
+  color: black;
+  margin: 10px;
+  font-family: Urbanist;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+}
+/* ------------------------------- */
 /* //* Home */
 /* ------------------------------- */
 /* ! Home information  */

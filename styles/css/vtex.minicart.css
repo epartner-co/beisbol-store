@@ -1,0 +1,32 @@
+/* ------------------------------- */
+/* //* Header */
+/* ------------------------------- */
+.cartIcon {
+  display: none;
+}
+.minicartContainer :global(.vtex-button) {
+  width: 25px;
+  height: 25px;
+  background-image: url('https://epartner.vteximg.com.br/arquivos/icono-cart.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.minicartQuantityBadge {
+  top: -20px;
+  left: 0;
+}
+
+/* ------------------------------- */
+/* //? Medias Query */
+/* ------------------------------- */
+@media (min-width: 1200px) {
+  /* ! Header */
+  .openIconContainer {
+    padding-right: 0;
+  }
+  .minicartWrapperContainer {
+    justify-content: center;
+  }
+}
+/* ------------------------------- */
