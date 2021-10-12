@@ -6,7 +6,7 @@
       "flex-layout.row#FooterSocials",
       "flex-layout.row#FooterPaymentMethods",
       "flex-layout.row#FooterInformation",
-      "rich-text#CopyRight"
+      "rich-text#CopyRight" // /footer.jsonc
 
       // "flex-layout.row#1-footer-mobile",
       // "flex-layout.row#2-footer-mobile"
@@ -19,40 +19,10 @@
       "blockClass": ["Footer-Promotional"]
     },
     "children": [
-      "rich-text#TitlePromotions",
-      "rich-text#Promotion1",
-      "rich-text#Promotion2"
+      "rich-text#TitlePromotions", // /footer.jsonc
+      "rich-text#Promotion1", // /footer.jsonc
+      "rich-text#Promotion2" // /footer.jsonc
     ]
-  },
-  // * Title promotions
-  "rich-text#TitlePromotions": {
-    "props": {
-      "blockClass": [
-        "FooterTitle",
-        "FooterTitle--promotions"
-      ],
-      "text": "Fechas promocionales"
-    }
-  },
-  // * Promotion text 1
-  "rich-text#Promotion1": {
-    "props": {
-      "blockClass": [
-        "Footer__Promotion",
-        "Footer__Promotion--1"
-      ],
-      "text": "[Cyber Days](#)"
-    }
-  },
-  // * Promotion text 2
-  "rich-text#Promotion2": {
-    "props": {
-      "blockClass": [
-        "Footer__Promotion",
-        "Footer__Promotion--2"
-      ],
-      "text": "[Black Friday](#)"
-    }
   },
 
   // ! Socials Section
@@ -61,60 +31,9 @@
       "blockClass": ["Footer-Socials"]
     },
     "children": [
-      "rich-text#TitleSocials",
-      "flex-layout.col#FooterSocials"
+      "rich-text#TitleSocials", // /footer.jsonc
+      "flex-layout.col#FooterSocials" // /footer.jsonc
     ]
-  },
-  // * Title socials
-  "rich-text#TitleSocials": {
-    "props": {
-      "blockClass": [
-        "FooterTitle",
-        "FooterTitle--socials"
-      ],
-      "text": "Redes sociales"
-    }
-  },
-  // * Socials images container
-  "flex-layout.col#FooterSocials": {
-    "props": {
-      "blockClass": ["Footer-Promotional__Images"]
-    },
-    "children": [
-      "image#Facebook",
-      "image#Instagram",
-      "image#Twitter"
-    ]
-  },
-  // * Facebook Icon
-  "image#Facebook": {
-    "props": {
-      "blockClass": [
-        "Footer__image",
-        "Footer__image--facebook"
-      ],
-      "src": "https://epartner.vteximg.com.br/arquivos/facebook-icon.png"
-    }
-  },
-  // * Instagram Icon
-  "image#Instagram": {
-    "props": {
-      "blockClass": [
-        "Footer__image",
-        "Footer__image--instagram"
-      ],
-      "src": "https://epartner.vteximg.com.br/arquivos/instagram-icon.png"
-    }
-  },
-  // * Twitter Icon
-  "image#Twitter": {
-    "props": {
-      "blockClass": [
-        "Footer__image",
-        "Footer__image--Twitter"
-      ],
-      "src": "https://epartner.vteximg.com.br/arquivos/twitter-icon.png"
-    }
   },
 
   // ! Payments Section
@@ -123,29 +42,9 @@
       "blockClass": ["Footer-Payment"]
     },
     "children": [
-      "rich-text#TitlePayments",
-      "image#Payments"
+      "rich-text#TitlePayments", // /footer.jsonc
+      "image#Payments" // /footer.jsonc
     ]
-  },
-  // * Title Payments
-  "rich-text#TitlePayments": {
-    "props": {
-      "blockClass": [
-        "FooterTitle",
-        "FooterTitle--payments"
-      ],
-      "text": "Medios de pago"
-    }
-  },
-  // * Payments image
-  "image#Payments": {
-    "props": {
-      "blockClass": [
-        "Footer__image",
-        "Footer__image--payments"
-      ],
-      "src": "https://epartner.vteximg.com.br/arquivos/payments-image.png"
-    }
   },
 
   // ! Development Section
@@ -167,31 +66,10 @@
       ]
     },
     "children": [
-      "rich-text#Development",
-      "image#Development"
+      "rich-text#Development", // /footer.jsonc
+      "image#Development" // /footer.jsonc
     ]
   },
-  // * Title Development
-  "rich-text#Development": {
-    "props": {
-      "blockClass": [
-        "FooterTitle",
-        "FooterTitle--development"
-      ],
-      "text": "Desarrollado por"
-    }
-  },
-  // * Development image
-  "image#Development": {
-    "props": {
-      "blockClass": [
-        "Footer__image",
-        "Footer__image--development"
-      ],
-      "src": "https://epartner.vteximg.com.br/arquivos/logo-epartner-color.png"
-    }
-  },
-
   // * Section right
   "flex-layout.col#FooterInformation--right": {
     "props": {
@@ -202,7 +80,7 @@
     },
     "children": [
       "rich-text#Technology",
-      "image#Technology"
+      "image#Technology" // /footer.jsonc
     ]
   },
   // * Title Technology
@@ -213,24 +91,6 @@
         "FooterTitle--technology"
       ],
       "text": "Tecnología"
-    }
-  },
-  // * Technology image
-  "image#Technology": {
-    "props": {
-      "blockClass": [
-        "Footer__image",
-        "Footer__image--technology"
-      ],
-      "src": "https://epartner.vteximg.com.br/arquivos/logo-vtex-color.png"
-    }
-  },
-
-  // ! CopyRight
-  "rich-text#CopyRight": {
-    "props": {
-      "blockClass": ["CopyRight"],
-      "text": "Copyright Beisbol 2021"
     }
   },
 

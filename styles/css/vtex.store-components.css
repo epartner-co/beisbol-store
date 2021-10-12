@@ -9,6 +9,15 @@
 .logoImage {
   width: 100px;
 }
+.imageElement--Footer__image {
+  filter: grayscale(1);
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.imageElement--Footer__image:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
 /* ------------------------------- */
 /* //* Footer */
 /* ------------------------------- */
@@ -49,6 +58,7 @@
 .infoCardHeadline--TopSlide__Item {
   display: flex;
   flex-direction: column;
+  margin-top: 0;
   color: #000000;
   font-family: Urbanist;
   font-size: 15px;
@@ -58,12 +68,13 @@
   text-align: left;
   text-transform: uppercase;
 }
-.infoCardHeadline--TopSlide__Item::before {
+.infoCardTextContainer--TopSlide__Item::before {
   content: '';
+  margin-top: 30px;
   margin-bottom: 20px;
   width: 100px;
   height: 150px;
-  background-image: url('https://epartner.vteximg.com.br/arquivos/mobile-imagen-banner-principal.png');
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/mobile-imagen-banner-principal.png');
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -111,17 +122,17 @@
   opacity: 0;
 }
 .infoCardImageContainer--CategorySlide__Item--1::after {
-  background-image: url('https://epartner.vteximg.com.br/arquivos/icono-categoria-desinfectantes-hover.png');
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/icono-categoria-desinfectantes-hover.png');
 }
 .infoCardImageContainer--CategorySlide__Item--2::after {
-  background-image: url('https://epartner.vteximg.com.br/arquivos/icono-categoria-familiar-hover.png');
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/icono-categoria-familiar-hover.png');
 }
 .infoCardImageContainer--CategorySlide__Item--3::after {
-  background-image: url('https://epartner.vteximg.com.br/arquivos/icono-categoria-hogar-hover.png');
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/icono-categoria-hogar-hover.png');
   background-size: contain;
 }
 .infoCardImageContainer--CategorySlide__Item--4::after {
-  background-image: url('https://epartner.vteximg.com.br/arquivos/icono-categoria-clinico-hover.png');
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/icono-categoria-clinico-hover.png');
 }
 .infoCardContainer--CategorySlide__Item:hover
   .infoCardImageContainer--CategorySlide__Item::after {
@@ -262,7 +273,7 @@
   content: '';
   width: 40%;
   height: 210px;
-  background-image: url('https://epartner.vteximg.com.br/arquivos/mobile-imagen-banner-nueva-presentacion.png');
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/mobile-imagen-banner-nueva-presentacion.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -299,7 +310,7 @@
 /* ! Newsletter */
 .newsletter--Newsletter {
   margin-top: 40px;
-  background-image: url('https://epartner.vteximg.com.br/arquivos/mobile-banner-newsletter.png');
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/mobile-banner-newsletter.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -406,7 +417,7 @@
 
 @media (min-width: 800px) {
   /* ! Top Slider */
-  .infoCardHeadline--TopSlide__Item::before {
+  .infoCardTextContainer--TopSlide__Item::before {
     width: 150px;
     height: 225px;
   }
@@ -434,7 +445,7 @@
 @media (min-width: 1200px) {
   /* ! Header */
   .searchBarContainer {
-    width: 75%;
+    width: 75% !important;
   }
   .autoCompleteOuterContainer
     :global(.vtex-input-prefix__group) {
@@ -451,12 +462,45 @@
     color: #001689;
   }
 
+  /* ! Footer */
+  .imageElement--Footer__image--development {
+    margin-top: 10px;
+  }
+  .imageElement--Footer__image--technology {
+    margin-top: 12px;
+  }
+
+  /* ! Top Slide */
+  .infoCardTextContainer--TopSlide__Item {
+    position: relative;
+    margin-top: 115px;
+    margin-bottom: 60px;
+    margin-left: 252px;
+  }
+  .infoCardTextContainer--TopSlide__Item::before {
+    position: absolute;
+    left: -180px;
+    top: -20px;
+  }
+  .infoCardSubhead--TopSlide__Item {
+    font-size: 85px;
+    line-height: 77.26px;
+  }
+  .infoCardTextContainer--TopSlide__Item--2 {
+    width: 35%;
+  }
+
   /* ! Category Slide */
   .infoCardContainer--CategorySlide__Item {
     width: 100%;
   }
   .infoCardImage--CategorySlide__Item {
     height: 150px;
+  }
+
+  /* ! Top Banners */
+  .infoCardTextContainer--BannerTop__item {
+    margin: 50px 40px;
   }
 
   /* ! Bottom Banners */
@@ -468,6 +512,19 @@
   }
   .infoCardContainer--BannerBottom__item--2 {
     height: 100%;
+  }
+  .infoCardContainer--BannerBottom__item--2. {
+    background-position-y: -40px;
+  }
+  .infoCardHeadline--BannerBottom__item--2 {
+    font-size: 40px;
+  }
+  .infoCardSubhead--BannerBottom__item--2 {
+    font-size: 40px;
+  }
+  .infoCardContainer--BannerBottom__item--2::before {
+    height: 280px;
+    background-image: url('https://beisbol.vteximg.com.br/arquivos/imagen-banner-nueva-presentacion-desktop.png');
   }
 
   /* ! Newsletter */

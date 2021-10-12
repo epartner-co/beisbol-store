@@ -41,8 +41,8 @@
       "id": "BannersBottom--item-1",
       "isFullModeStyle": false,
       "textPosition": "left",
-      // "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "mobileImageUrl": "https://epartner.vteximg.com.br/arquivos/mobile-imagen-banner-tranquilidad-de-madres.png",
+      "imageUrl": "https://beisbol.vteximg.com.br/arquivos/imagen-banner-tranquilidad-de-madres-desktop.png",
+      "mobileImageUrl": "https://beisbol.vteximg.com.br/arquivos/mobile-imagen-banner-tranquilidad-de-madres.png",
       "callToActionText": "Ver producto",
       "callToActionUrl": "#"
     }
@@ -59,8 +59,8 @@
       "id": "BannersBottom--item-2",
       "isFullModeStyle": true,
       "textPosition": "left",
-      // "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "mobileImageUrl": "https://epartner.vteximg.com.br/arquivos/mobile-banner-nueva-presentacion.png",
+      "imageUrl": "https://beisbol.vteximg.com.br/arquivos/banner-nueva-presentacion-desktop.png",
+      "mobileImageUrl": "https://beisbol.vteximg.com.br/arquivos/mobile-banner-nueva-presentacion.png",
       "headline": "¡Nueva",
       "subhead": "presentación!",
       "callToActionMode": "none"

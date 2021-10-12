@@ -5,7 +5,7 @@
   width: 25px;
   height: 25px;
   color: #001689;
-  background-image: url('https://epartner.vteximg.com.br/arquivos/icono-language.png');
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/icono-language.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -15,6 +15,9 @@
 }
 .globeIcon {
   display: none;
+}
+.container {
+  width: 3rem;
 }
 
 /* ------------------------------- */

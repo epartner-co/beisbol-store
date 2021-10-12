@@ -17,6 +17,7 @@
       "logo#mobile",
       "flex-layout.col#spacer",
       "locale-switcher",
+      "login",
       "minicart.v2"
     ],
     "props": {
@@ -47,7 +48,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://epartner.vteximg.com.br/arquivos/Logo.png"
+      "url": "https://beisbol.vteximg.com.br/arquivos/Logo.png"
     }
   }
 }

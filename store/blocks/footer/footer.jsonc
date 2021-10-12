@@ -1,0 +1,152 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+
+  // * Title promotions
+  "rich-text#TitlePromotions": {
+    "props": {
+      "blockClass": [
+        "FooterTitle",
+        "FooterTitle--promotions"
+      ],
+      "text": "Fechas promocionales"
+    }
+  },
+  // * Promotion text 1
+  "rich-text#Promotion1": {
+    "props": {
+      "blockClass": [
+        "Footer__Promotion",
+        "Footer__Promotion--1"
+      ],
+      "text": "[Cyber Days](#)"
+    }
+  },
+  // * Promotion text 2
+  "rich-text#Promotion2": {
+    "props": {
+      "blockClass": [
+        "Footer__Promotion",
+        "Footer__Promotion--2"
+      ],
+      "text": "[Black Friday](#)"
+    }
+  },
+
+  // * Title socials
+  "rich-text#TitleSocials": {
+    "props": {
+      "blockClass": [
+        "FooterTitle",
+        "FooterTitle--socials"
+      ],
+      "text": "Redes sociales"
+    }
+  },
+  // * Socials images container
+  "flex-layout.col#FooterSocials": {
+    "props": {
+      "blockClass": ["Footer-Promotional__Images"]
+    },
+    "children": [
+      "image#Facebook",
+      "image#Instagram",
+      "image#Twitter"
+    ]
+  },
+  // * Facebook Icon
+  "image#Facebook": {
+    "props": {
+      "blockClass": [
+        "Footer__image",
+        "Footer__image--facebook"
+      ],
+      "src": "https://beisbol.vteximg.com.br/arquivos/icon-facebook.png"
+    }
+  },
+  // * Instagram Icon
+  "image#Instagram": {
+    "props": {
+      "blockClass": [
+        "Footer__image",
+        "Footer__image--instagram"
+      ],
+      "src": "https://beisbol.vteximg.com.br/arquivos/icon-instagram.png"
+    }
+  },
+  // * Twitter Icon
+  "image#Twitter": {
+    "props": {
+      "blockClass": [
+        "Footer__image",
+        "Footer__image--Twitter"
+      ],
+      "src": "https://beisbol.vteximg.com.br/arquivos/icon-twitter.png"
+    }
+  },
+
+  // * Title Payments
+  "rich-text#TitlePayments": {
+    "props": {
+      "blockClass": [
+        "FooterTitle",
+        "FooterTitle--payments"
+      ],
+      "text": "Medios de pago"
+    }
+  },
+  // * Payments image
+  "image#Payments": {
+    "props": {
+      "blockClass": [
+        "Footer__image",
+        "Footer__image--payments"
+      ],
+      "src": "https://beisbol.vteximg.com.br/arquivos/payments-image.png"
+    }
+  },
+
+  // * Title Development
+  "rich-text#Development": {
+    "props": {
+      "blockClass": [
+        "FooterTitle",
+        "FooterTitle--development"
+      ],
+      "text": "Desarrollado por"
+    }
+  },
+  // * Development image
+  "image#Development": {
+    "props": {
+      "blockClass": [
+        "Footer__image",
+        "Footer__image--development"
+      ],
+      "src": "https://beisbol.vteximg.com.br/arquivos/logo-epartner-color.png"
+    }
+  },
+
+  // * Technology image
+  "image#Technology": {
+    "props": {
+      "blockClass": [
+        "Footer__image",
+        "Footer__image--technology"
+      ],
+      "src": "https://beisbol.vteximg.com.br/arquivos/logo-vtex-color.png"
+    }
+  },
+
+  // * CopyRight
+  "rich-text#CopyRight": {
+    "props": {
+      "blockClass": ["CopyRight"],
+      "text": "Copyright Beisbol 2021"
+    }
+  }
+}
