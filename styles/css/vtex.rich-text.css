@@ -19,6 +19,9 @@
   color: #001689;
   text-decoration: none;
 }
+.link--Header-top-text:hover {
+  text-decoration: underline;
+}
 /* ------------------------------- */
 /* //* Footer */
 /* ------------------------------- */
@@ -34,10 +37,10 @@
   text-align: center;
   text-transform: capitalize;
 }
-.wrapper--Footer__Promotion {
+.wrapper--Footer__Text {
   width: 100%;
 }
-.paragraph--Footer__Promotion {
+.paragraph--Footer__Text {
   margin-top: 0;
   margin-bottom: 10px;
   font-family: Urbanist;
@@ -45,12 +48,12 @@
   font-style: normal;
   text-align: center;
 }
-.link--Footer__Promotion {
+.link--Footer__Text {
   color: #8f8f8f;
   text-decoration: none;
   transition: 0.3s;
 }
-.link--Footer__Promotion:hover {
+.link--Footer__Text:hover {
   color: black;
 }
 .paragraph--FooterTitle--development {
@@ -85,6 +88,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 25px 0;
   width: 100%;
   color: #001689;
   font-family: Urbanist;
@@ -207,6 +211,11 @@
   }
   .container--Title--mom {
     height: 100%;
+  }
+
+  /* ! CopyRight */
+  .wrapper--CopyRight {
+    background-color: white;
   }
 }
 

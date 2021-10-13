@@ -87,15 +87,25 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: initial;
   background-color: #001689;
   border-color: #001689;
   border-radius: 51px;
+  transition: 0.3s;
+}
+.infoCardCallActionContainer--TopSlide__Item
+  :global(.vtex-button):hover {
+  background-color: #000b45;
+  border-color: #000b45;
 }
 /* ! Category slide */
+.infoCardCallActionContainer--CategorySlide__Item {
+  width: 100%;
+}
 .infoCardContainer--CategorySlide__Item {
   display: flex;
   flex-direction: column-reverse;
+  width: 100%;
 }
 .infoCardCallActionContainer--CategorySlide__Item {
   margin: 0;
@@ -113,7 +123,7 @@
   right: 0;
   bottom: 4px;
   width: 100%;
-  background-color: #00000070;
+  background-color: rgba(0, 22, 137, 0.3);
   background-size: initial;
   background-position: center;
   background-repeat: no-repeat;
@@ -209,6 +219,12 @@
   font-weight: 700;
   text-align: center;
 }
+.infoCardTextContainer--BannerTop__item--2 {
+  margin-right: 170px;
+}
+.infoCardHeadline--BannerTop__item--2 {
+  position: relative;
+}
 .infoCardHeadline--BannerTop__item--2 {
   color: white;
   font-family: Urbanist;
@@ -216,6 +232,19 @@
   font-style: normal;
   font-weight: 700;
   text-align: left;
+}
+.infoCardHeadline--BannerTop__item--2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: -70px;
+  right: -155px;
+  width: 154px;
+  height: auto;
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/image banner-mas-aroma-para-tu-economia-mobile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .infoCardCallActionContainer--BannerTop__item--2
   :global(.vtex-button) {
@@ -252,6 +281,11 @@
   background-color: #001689;
   border-width: 1px;
   border-radius: 100px;
+  transition: 0.3s;
+}
+.infoCardCallActionContainer--BannerBottom__item--1
+  :global(.vtex-button):hover {
+  background-color: #000b45;
 }
 .infoCardCallActionContainer--BannerBottom__item--1
   :global(.vtex-button__label) {
@@ -497,6 +531,10 @@
   .infoCardImage--CategorySlide__Item {
     height: 150px;
   }
+  .infoCardContainer--CategorySlide__Item
+    .infoCardImageContainer--CategorySlide__Item--3::after {
+    background-size: 20%;
+  }
 
   /* ! Top Banners */
   .infoCardTextContainer--BannerTop__item {
@@ -513,7 +551,7 @@
   .infoCardContainer--BannerBottom__item--2 {
     height: 100%;
   }
-  .infoCardContainer--BannerBottom__item--2. {
+  .infoCardContainer--BannerBottom__item--2 {
     background-position-y: -40px;
   }
   .infoCardHeadline--BannerBottom__item--2 {
@@ -529,7 +567,22 @@
 
   /* ! Newsletter */
   .container--Newsletter {
-    padding: 80px 10px;
+    padding: 100px 10px;
+  }
+  .newsletter--Newsletter {
+    background-image: url('https://beisbol.vteximg.com.br/arquivos/banner-newsletter-desktop.png');
+  }
+  .label--Newsletter {
+    font-size: 20px;
+  }
+  .label--Newsletter::before {
+    font-size: 25px;
+  }
+  .inputGroup--Newsletter {
+    flex-direction: row;
+  }
+  .buttonContainer--Newsletter {
+    padding-top: 0;
   }
 }
 
@@ -554,10 +607,10 @@
   max-width: 1528px;
   margin: 0 auto;
 } */
-
+/*
 .newsletter .container {
   padding: 60px 10px;
-}
+} */
 
 /* .label {
   color: #fff;
