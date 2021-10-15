@@ -77,6 +77,15 @@
 .flexColChild--Footer-Desktop__subColum-5--3:first-child {
   width: 100%;
 }
+.flexRow--Footer-Groups {
+  padding: 15px 25px;
+}
+.flexColChild--Footer-Groups__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 /* ------------------------------- */
 /* //* Home */
 /* ------------------------------- */

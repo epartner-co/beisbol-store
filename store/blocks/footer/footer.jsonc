@@ -180,6 +180,16 @@
   },
 
   // * Politics Section
+  // ! Title Politics
+  "rich-text#TitlePolitics": {
+    "props": {
+      "blockClass": [
+        "FooterTitle",
+        "FooterTitle--politics"
+      ],
+      "text": "Políticas"
+    }
+  },
   // ! Terms and conditions
   "rich-text#Terms": {
     "props": {
@@ -222,6 +232,16 @@
   },
 
   // * Institutional Section
+  // ! Title Institutional
+  "rich-text#TitleInstitutional": {
+    "props": {
+      "blockClass": [
+        "FooterTitle",
+        "FooterTitle--institutional"
+      ],
+      "text": "Institucional"
+    }
+  },
   // ! Company
   "rich-text#Company": {
     "props": {
@@ -254,6 +274,16 @@
   },
 
   // * Client attention Section
+  // ! Title Client
+  "rich-text#TitleClient": {
+    "props": {
+      "blockClass": [
+        "FooterTitle",
+        "FooterTitle--client"
+      ],
+      "text": "Atención al cliente"
+    }
+  },
   // ! Number Client
   "rich-text#NumberClient": {
     "props": {
@@ -276,6 +306,16 @@
   },
 
   // * Support Client Section
+  // ! Title Client
+  "rich-text#TitleSupport": {
+    "props": {
+      "blockClass": [
+        "FooterTitle",
+        "FooterTitle--support"
+      ],
+      "text": "Soporte y Servicio"
+    }
+  },
   // ! Advice
   "rich-text#Advice": {
     "props": {

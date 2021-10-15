@@ -1,3 +1,35 @@
+/* ------------------------------- */
+/* //* Footer */
+/* ------------------------------- */
+.trigger--Disclosure__Trigger {
+  margin: 5px;
+  padding: 0 50px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #001689;
+  border-radius: 100px;
+  outline: none;
+}
+.trigger--Disclosure__Trigger--visible
+  :global(.vtex-rich-text-0-x-paragraph--FooterTitle--client)::after,
+.trigger--Disclosure__Trigger--visible
+  :global(.vtex-rich-text-0-x-paragraph--FooterTitle--support)::after,
+.trigger--Disclosure__Trigger--visible
+  :global(.vtex-rich-text-0-x-paragraph--FooterTitle--politics)::after,
+.trigger--Disclosure__Trigger--visible
+  :global(.vtex-rich-text-0-x-paragraph--FooterTitle--institutional)::after {
+  transform: rotate(180deg);
+}
+/* ------------------------------- */
+/* //? Medias Query */
+/* ------------------------------- */
+@media (min-width: 800px) {
+  /* ! Footer */
+  .trigger--Disclosure__Trigger {
+    width: 50%;
+  }
+}
+/* ------------------------------- */
 .trigger--question {
   display: flex;
   align-items: center;
@@ -5,21 +37,26 @@
   outline: none;
 }
 
-.trigger--question :global(.vtex-rich-text-0-x-paragraph) {
+.trigger--question
+  :global(.vtex-rich-text-0-x-paragraph) {
   font-weight: bold;
 }
 
 .trigger--question:focus,
-.trigger--question:focus :global(.vtex-rich-text-0-x-paragraph) {
-  color: #0F3E99;
+.trigger--question:focus
+  :global(.vtex-rich-text-0-x-paragraph) {
+  color: #0f3e99;
 }
 
-.trigger :global(.vtex-store-icons-0-x-caretIcon) {
+.trigger
+  :global(.vtex-store-icons-0-x-caretIcon) {
   margin-right: 1rem;
 }
 
 .content--answer {
-  transition: opacity 250ms ease-in-out, height 250ms ease-in-out, transform 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out,
+    height 250ms ease-in-out,
+    transform 250ms ease-in-out;
   opacity: 0;
   height: 0;
   transform: translate3d(0, -10%, 0);

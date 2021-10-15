@@ -3,6 +3,7 @@
   "footer-layout.mobile": {
     "children": [
       "flex-layout.row#FooterPromotional",
+      "flex-layout.row#FooterGroups",
       "flex-layout.row#FooterSocials",
       "flex-layout.row#FooterPaymentMethods",
       "flex-layout.row#FooterInformation",
@@ -33,6 +34,22 @@
     "children": [
       "rich-text#TitleSocials", // /footer.jsonc
       "flex-layout.col#FooterSocials" // /footer.jsonc
+    ]
+  },
+
+  // ! Groups Section
+  "flex-layout.row#FooterGroups": {
+    "props": {
+      "blockClass": ["Footer-Groups"]
+    },
+    "children": ["flex-layout.col#FooterGroups"]
+  },
+  "flex-layout.col#FooterGroups": {
+    "props": {
+      "blockClass": ["Footer-Groups__container"]
+    },
+    "children": [
+      "disclosure-layout-group#FooterGroup" // /FooterMenu.jsonc
     ]
   },
 

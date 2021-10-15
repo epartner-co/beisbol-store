@@ -37,6 +37,28 @@
   text-align: center;
   text-transform: capitalize;
 }
+.paragraph--FooterTitle--institutional,
+.paragraph--FooterTitle--politics,
+.paragraph--FooterTitle--support,
+.paragraph--FooterTitle--client {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+.paragraph--FooterTitle--institutional::after,
+.paragraph--FooterTitle--politics::after,
+.paragraph--FooterTitle--support::after,
+.paragraph--FooterTitle--client::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/footer-arrow.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .wrapper--Footer__Text {
   width: 100%;
 }
@@ -192,6 +214,12 @@
   /* ! Footer */
   .paragraph--FooterTitle--development {
     text-align: left;
+  }
+  .paragraph--FooterTitle--institutional::after,
+  .paragraph--FooterTitle--politics::after,
+  .paragraph--FooterTitle--support::after,
+  .paragraph--FooterTitle--client::after {
+    display: none;
   }
 
   /* ! Home information  */

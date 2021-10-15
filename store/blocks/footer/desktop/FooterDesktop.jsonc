@@ -46,22 +46,12 @@
       ]
     },
     "children": [
-      "rich-text#TitlePolitics",
+      "rich-text#TitlePolitics", // /footer.jsonc
       "rich-text#Terms", // /footer.jsonc
       "rich-text#PrivacyPolitics", // /footer.jsonc
       "rich-text#Cookies", // /footer.jsonc
       "rich-text#Corruption" // /footer.jsonc
     ]
-  },
-  // ! Title Politics
-  "rich-text#TitlePolitics": {
-    "props": {
-      "blockClass": [
-        "FooterTitle",
-        "FooterTitle--politics"
-      ],
-      "text": "Políticas"
-    }
   },
 
   // * Footer Column 3
@@ -73,21 +63,11 @@
       ]
     },
     "children": [
-      "rich-text#TitleInstitutional",
+      "rich-text#TitleInstitutional", // /footer.jsonc
       "rich-text#Company", // /footer.jsonc
       "rich-text#History", // /footer.jsonc
       "rich-text#Works" // /footer.jsonc
     ]
-  },
-  // ! Title Institutional
-  "rich-text#TitleInstitutional": {
-    "props": {
-      "blockClass": [
-        "FooterTitle",
-        "FooterTitle--institutional"
-      ],
-      "text": "Institucional"
-    }
   },
 
   // * Footer Column 4
@@ -113,20 +93,10 @@
       ]
     },
     "children": [
-      "rich-text#TitleClient",
+      "rich-text#TitleClient", // /footer.jsonc
       "rich-text#NumberClient", // /footer.jsonc
       "rich-text#Mail" // /footer.jsonc
     ]
-  },
-  // ? Title Client
-  "rich-text#TitleClient": {
-    "props": {
-      "blockClass": [
-        "FooterTitle",
-        "FooterTitle--client"
-      ],
-      "text": "Atención al cliente"
-    }
   },
   // ! Footer Column 4 - Bottom
   "flex-layout.col#FooterDesktop-Column-4-bottom": {
@@ -138,21 +108,11 @@
       ]
     },
     "children": [
-      "rich-text#TitleSupport",
+      "rich-text#TitleSupport", // /footer.jsonc
       "rich-text#Advice", // /footer.jsonc
       "rich-text#Contact", // /footer.jsonc
       "rich-text#Warranty" // /footer.jsonc
     ]
-  },
-  // ? Title Client
-  "rich-text#TitleSupport": {
-    "props": {
-      "blockClass": [
-        "FooterTitle",
-        "FooterTitle--support"
-      ],
-      "text": "Soporte y Servicio"
-    }
   },
 
   // * Footer Column 5
