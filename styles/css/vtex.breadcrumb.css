@@ -1,0 +1,14 @@
+/* ------------------------------- */
+/* //* Product page */
+/* ------------------------------- */
+.container :global(.vtex-breadcrumb-1-x-link) {
+  font-family: 'Roboto';
+  font-weight: 100;
+  color: #8f8f8f;
+}
+.term {
+  font-weight: 700;
+  color: #8f8f8f;
+}
+
+/* ------------------------------- */
