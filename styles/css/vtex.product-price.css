@@ -16,6 +16,49 @@
 }
 
 /* ------------------------------- */
+/* //* product page */
+/* ------------------------------- */
+.sellingPrice {
+  padding: 0;
+}
+.sellingPriceValue {
+  color: #000000;
+  font-family: Urbanist;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: left;
+}
+.listPriceValue {
+  color: #a7a7a7;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 100;
+  text-align: left;
+}
+.listPrice {
+  margin-bottom: 0;
+  color: #a7a7a7;
+  margin-right: 10px;
+}
+.savings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto !important;
+  background-color: #acb8f5;
+  border-radius: 3px;
+}
+.savingsPercentage {
+  padding: 2px 5px;
+  color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+
+/* ------------------------------- */
 /* //? Medias Query */
 /* ------------------------------- */
 @media (min-width: 1200px) {
@@ -26,11 +69,11 @@
 }
 
 /* ------------------------------- */
-.listPrice {
+/* .listPrice {
   color: #727273;
   margin-bottom: 0.25rem;
   font-size: 1rem;
-}
+} */
 
 /* .sellingPrice {
   color: #3f3f40;

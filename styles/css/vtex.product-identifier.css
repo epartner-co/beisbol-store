@@ -1,3 +1,11 @@
-.product-identifier--productReference {
-  margin-bottom: 1rem;
+/* ------------------------------- */
+/* //* Product page */
+/* ------------------------------- */
+.product-identifier {
+  color: #8f8f8f;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
 }
+/* ------------------------------- */

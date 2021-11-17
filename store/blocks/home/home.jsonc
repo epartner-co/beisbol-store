@@ -24,7 +24,7 @@
       // "info-card#home",
       // "rich-text#question",
       // "rich-text#link",
-      "newsletter"
+      "newsletter" // ./newsletter.jsonc
     ]
   },
   // * Top Slide
@@ -137,15 +137,6 @@
       ]
     },
     "children": ["flex-layout.col#Shelf-3"]
-  },
-
-  "newsletter": {
-    "props": {
-      "blockClass": ["Newsletter"],
-      "label": "Suscríbete a nuestro newsletter",
-      "placeholder": "Correo electrónico",
-      "submit": "Suscribirme"
-    }
   },
 
   // "list-context.image-list#demo": {

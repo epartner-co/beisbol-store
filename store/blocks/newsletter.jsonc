@@ -1,0 +1,10 @@
+{
+  "newsletter": {
+    "props": {
+      "blockClass": ["Newsletter"],
+      "label": "Suscríbete a nuestro newsletter",
+      "placeholder": "Correo electrónico",
+      "submit": "Suscribirme"
+    }
+  }
+}

@@ -2,13 +2,29 @@
 /* //* Product page */
 /* ------------------------------- */
 .container :global(.vtex-breadcrumb-1-x-link) {
+  color: #8f8f8f;
   font-family: 'Roboto';
   font-weight: 100;
-  color: #8f8f8f;
+}
+.homeLink::before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  color: #001689;
+  /* TODO: Change Icon environment image */
+  background-image: url('https://epartner.vteximg.com.br/arquivos/home-product-page-icon.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(-4px);
 }
 .term {
-  font-weight: 700;
   color: #8f8f8f;
+  font-weight: 700;
+}
+.homeIcon {
+  display: none;
 }
 
 /* ------------------------------- */
