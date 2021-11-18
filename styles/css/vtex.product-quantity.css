@@ -49,4 +49,21 @@
   color: #001689;
 }
 
+@media (min-width: 640px) {
+  /* ! Product page */
+  .quantitySelectorContainer {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* ! Product page */
+  .quantitySelectorContainer {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .quantitySelectorTitle {
+    margin-bottom: 10px;
+  }
+}
 /* ------------------------------- */

@@ -196,6 +196,11 @@
 }
 
 /* ------------------------------- */
+/* //* Product page*/
+/* ------------------------------- */
+.headingLevel2--Title--most-selling {
+  margin-top: 70px;
+}
 /* //? Medias Query */
 /* ------------------------------- */
 @media (min-width: 640px) {
@@ -244,6 +249,11 @@
   /* ! CopyRight */
   .wrapper--CopyRight {
     background-color: white;
+  }
+
+  /* ! Product page */
+  .headingLevel2--Title--most-selling {
+    margin-top: 0;
   }
 }
 

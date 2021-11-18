@@ -6,11 +6,15 @@
   justify-content: space-between;
   margin: 10px;
   padding: 10px;
+  background-color: transparent;
   border-radius: 5px;
+  border: 1px solid transparent;
   box-shadow: 0;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .element--ProductShelfHome:hover {
+  background-color: white;
+  border-color: #28508c;
   box-shadow: 0px 0px 15px 0px #00000026;
 }
 .element--ProductShelfHome .brandName {

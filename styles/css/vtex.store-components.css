@@ -9,6 +9,9 @@
 .logoImage {
   width: 100px;
 }
+/* ------------------------------- */
+/* //* Footer */
+/* ------------------------------- */
 .imageElement--Footer__image {
   filter: grayscale(1);
   opacity: 0.7;
@@ -18,9 +21,6 @@
   filter: grayscale(0);
   opacity: 1;
 }
-/* ------------------------------- */
-/* //* Footer */
-/* ------------------------------- */
 .imageElement--Footer__image--payments {
   width: 90%;
 }
@@ -485,6 +485,9 @@
 }
 .skuSelectorItem {
   margin: 0.25rem 0.5rem 0.25rem 0;
+  background-color: white;
+  box-shadow: 0px 4px 10px 0px #00000026;
+  border-radius: 5px;
 }
 .skuSelectorItem--selected .frameAround {
   top: -0.1rem;
@@ -494,11 +497,15 @@
   border: 1.9px solid #001689;
   border-radius: 5px;
 }
-.skuSelectorInternalBox {
+.productImageTag--main {
+  box-shadow: 0px 4px 15px 0px #0000001a;
+  border-radius: 5px;
+}
+/* .skuSelectorInternalBox {
   background: white;
   border: 0;
   box-shadow: 0px 4px 10px 0px #00000026;
-}
+} */
 .shippingContainer
   :global(.vtex-dropdown__label) {
   font-family: Urbanist;
@@ -549,7 +556,22 @@
 .swiper-pagination {
   bottom: 5px;
 }
-
+.swiperCaret {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  color: #ededed;
+  background-color: #ffffff !important;
+  border-radius: 50%;
+  box-shadow: 0px 0px 13px 0px #00000026;
+  transition: 0.3s;
+}
+.swiperCaret:hover {
+  color: #001689;
+}
 /* ------------------------------- */
 /* //? Medias Query */
 /* ------------------------------- */
@@ -561,6 +583,10 @@
   }
   .infoCardTextContainer--BannerBottom__item--2 {
     margin-left: 0;
+  }
+  /* ! Product page */
+  .swiperCaret {
+    display: none;
   }
 }
 
@@ -699,8 +725,31 @@
   .buttonContainer--Newsletter {
     padding-top: 0;
   }
+
+  /* ! Product page */
+  .productImagesGallerySlide {
+    width: 100% !important;
+  }
 }
 
+@media (max-width: 1199px) {
+  /* ! Footer */
+  .imageElement--Footer__image--technology {
+    filter: none;
+    opacity: 1;
+  }
+  .imageElement--Footer__image--development {
+    filter: none;
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1700px) {
+  /* ! Product page */
+  .productImageTag--main {
+    object-fit: cover !important;
+  }
+}
 /* ------------------------------- */
 .notificationBarContainer {
   background-color: #e6f1e6;

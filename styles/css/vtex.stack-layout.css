@@ -7,3 +7,10 @@
   top: 0;
   left: auto;
 }
+
+@media (min-width: 640px) {
+  /* ! Product page */
+  .stackContainer--product {
+    margin: 0 25px 50px;
+  }
+}
