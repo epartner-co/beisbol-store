@@ -26,8 +26,9 @@
   text-align: left;
 }
 .element--ProductShelfHome :global(.vtex-button) {
-  background-color: #001689;
-  border-color: #001689;
+  margin-top: 15px;
+  background-color: #28508c;
+  border-color: #28508c;
   border-radius: 100px;
 }
 .element--ProductShelfHome
@@ -47,6 +48,12 @@
   /* ! Vitrina */
   .brandName {
     font-size: 17px;
+  }
+}
+@media (max-width: 1200px) {
+  /* ! Vitrina */
+  .element--ProductShelfHome {
+    border-color: #28508c;
   }
 }
 

@@ -2,15 +2,15 @@
 /* //* Header */
 /* ------------------------------- */
 .container--Header-top-text {
-  background-color: #ededed;
+  background-color: #28508c;
 }
 .wrapper--Header-top-text {
   width: 100%;
 }
 .paragraph--Header-top-text {
-  color: #001689;
+  color: white;
   font-family: Urbanist;
-  font-size: 15px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
   text-align: center;
@@ -29,7 +29,7 @@
   width: 100%;
 }
 .paragraph--FooterTitle {
-  color: #001689;
+  color: white;
   font-family: Urbanist;
   font-size: 18px;
   font-style: normal;
@@ -40,20 +40,24 @@
 .paragraph--FooterTitle--institutional,
 .paragraph--FooterTitle--politics,
 .paragraph--FooterTitle--support,
-.paragraph--FooterTitle--client {
+.paragraph--FooterTitle--client,
+.paragraph--FooterTitle--terms {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
+  margin: 8px 0px;
   text-align: left;
 }
 .paragraph--FooterTitle--institutional::after,
 .paragraph--FooterTitle--politics::after,
 .paragraph--FooterTitle--support::after,
-.paragraph--FooterTitle--client::after {
+.paragraph--FooterTitle--client::after,
+.paragraph--FooterTitle--terms::after {
   content: '';
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
+  /* TODO: Change icons in footer with white label */
   background-image: url('https://beisbol.vteximg.com.br/arquivos/footer-arrow.png');
   background-size: 100%;
   background-repeat: no-repeat;
@@ -65,18 +69,19 @@
 .paragraph--Footer__Text {
   margin-top: 0;
   margin-bottom: 10px;
+  color: white;
   font-family: Urbanist;
   font-size: 17px;
   font-style: normal;
   text-align: center;
 }
 .link--Footer__Text {
-  color: #8f8f8f;
+  color: white;
   text-decoration: none;
   transition: 0.3s;
 }
 .link--Footer__Text:hover {
-  color: black;
+  color: white;
 }
 .paragraph--FooterTitle--development {
   margin-bottom: 0;
@@ -149,7 +154,7 @@
   align-items: center;
   margin-left: 10px;
   margin-right: 10px;
-  color: #001689;
+  color: #28508c;
   font-family: Urbanist;
   font-size: 25px;
   font-style: normal;
@@ -160,7 +165,7 @@
 .container--Home__Title {
   justify-content: center;
 }
-.heading--Home__Title::before,
+/* .heading--Home__Title::before,
 .heading--Home__Title::after {
   content: '';
   background-image: url('https://beisbol.vteximg.com.br/arquivos/burbujas-titulos.png');
@@ -169,7 +174,7 @@
   height: 50px;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 .heading--Home__Title::before {
   margin-right: 10px;
   transform: rotate(180deg);
@@ -220,11 +225,20 @@
   .paragraph--FooterTitle--development {
     text-align: left;
   }
+  .paragraph--FooterTitle {
+    margin: 0 0 10px;
+  }
   .paragraph--FooterTitle--institutional::after,
   .paragraph--FooterTitle--politics::after,
   .paragraph--FooterTitle--support::after,
   .paragraph--FooterTitle--client::after {
     display: none;
+  }
+  .paragraph--Footer__Text--terms-2 {
+    padding: 20px 100px;
+    color: white;
+    font-size: 13px;
+    text-align: center;
   }
 
   /* ! Home information  */

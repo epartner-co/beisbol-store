@@ -12,24 +12,6 @@
   :global(.vtex-store-drawer-0-x-openIconContainer) {
   color: #001689;
 }
-.flexRowContent--Footer-Promotional {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.flexRowContent--Footer-Socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.flexRowContent--Footer-Payment {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 .flexRowContent--Header-Desktop__container--right
   .stretchChildrenWidth {
   width: auto !important;
@@ -45,7 +27,7 @@
   padding: 0 90px;
 }
 .flexColChild--Footer-Promotional__Images {
-  padding: 0 15px;
+  padding: 0 8px;
 }
 .flexRowContent--Footer-development {
   display: flex;
@@ -80,7 +62,22 @@
 .flexRow--Footer-Groups {
   padding: 15px 25px;
 }
+.flexColChild--Footer-Terms__container,
 .flexColChild--Footer-Groups__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flexRow--Footer-Terms {
+  padding: 15px 25px;
+}
+.flexRow--Footer-Logo {
+  padding-top: 25px;
+}
+.flexRowContent--Footer-Payment,
+.flexRowContent--Footer-Socials,
+.flexRowContent--Footer-Promotional {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -264,6 +261,15 @@
   .flexRowContent--Footer-Desktop__container
     .stretchChildrenWidth:last-child {
     padding-left: 5px;
+  }
+  .flexColChild--Footer-Desktop__colum--4:last-child {
+    margin-top: 20px;
+  }
+  .flexColChild--Footer-Desktop__colum--5 {
+    margin-top: 20px;
+  }
+  .flexColChild--Footer-Desktop__colum--5:first-child {
+    margin-top: 0;
   }
 
   /* ! Home Information */

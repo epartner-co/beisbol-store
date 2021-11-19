@@ -3,10 +3,10 @@
 /* ------------------------------- */
 .trigger--Disclosure__Trigger {
   margin: 5px;
-  padding: 0 50px;
+  padding: 0 35px;
   width: 100%;
   background-color: transparent;
-  border: 1px solid #001689;
+  border: 1px solid white;
   border-radius: 100px;
   outline: none;
 }
@@ -17,7 +17,9 @@
 .trigger--Disclosure__Trigger--visible
   :global(.vtex-rich-text-0-x-paragraph--FooterTitle--politics)::after,
 .trigger--Disclosure__Trigger--visible
-  :global(.vtex-rich-text-0-x-paragraph--FooterTitle--institutional)::after {
+  :global(.vtex-rich-text-0-x-paragraph--FooterTitle--institutional)::after,
+.trigger--Disclosure__Trigger--visible
+  :global(.vtex-rich-text-0-x-paragraph--FooterTitle--terms)::after {
   transform: rotate(180deg);
 }
 /* ------------------------------- */

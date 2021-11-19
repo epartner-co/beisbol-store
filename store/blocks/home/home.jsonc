@@ -5,7 +5,7 @@
     },
     "blocks": [
       "flex-layout.row#TopSlide",
-      "flex-layout.row#Information",
+      // "flex-layout.row#Information",
       "flex-layout.row#CategorySlide",
       "rich-text#Title-1",
       "flex-layout.row#Shelf-1",
@@ -13,17 +13,9 @@
       "flex-layout.row#Banners",
       "rich-text#Title-2",
       "flex-layout.row#Shelf-2",
-      "flex-layout.row#Banners2",
-      "rich-text#Title-3",
-      "flex-layout.row#Shelf-3",
-      // "slider-layout#homeTopSlide",
-      // "list-context.image-list#homeList",
-      // "flex-layout.row#deals",
-      // "rich-text#shelf-title",
-      // "flex-layout.row#shelf",
-      // "info-card#home",
-      // "rich-text#question",
-      // "rich-text#link",
+      // "flex-layout.row#Banners2",
+      // "rich-text#Title-3",
+      // "flex-layout.row#Shelf-3",
       "newsletter" // ./newsletter.jsonc
     ]
   },
@@ -58,7 +50,7 @@
         "Home__Title",
         "Title--destacados-new"
       ],
-      "text": "## Productos destacados"
+      "text": "## Lo más vendido"
     }
   },
 
@@ -91,7 +83,7 @@
         "Home__Title",
         "Title--products"
       ],
-      "text": "## Productos del mes"
+      "text": "## Departamento temporal"
     }
   },
 

@@ -16,8 +16,10 @@
       "drawer",
       "logo#mobile",
       "flex-layout.col#spacer",
-      "locale-switcher",
-      "login",
+      // "locale-switcher",
+      // "login",
+      // TODO: Talk with design to modify the search bar
+      // "search-bar",
       "minicart.v2"
     ],
     "props": {

@@ -5,7 +5,7 @@
     },
     "children": [
       "flex-layout.row#FooterDesktop",
-      "rich-text#CopyRight"
+      "rich-text#TermsText" // /footer.jsonc
     ]
   },
   // * Footer container
@@ -31,9 +31,10 @@
       ]
     },
     "children": [
-      "rich-text#TitlePromotions", // /footer.jsonc
-      "rich-text#Promotion1", // /footer.jsonc
-      "rich-text#Promotion2" // /footer.jsonc
+      // "rich-text#TitlePromotions", // /footer.jsonc
+      // "rich-text#Promotion1", // /footer.jsonc
+      // "rich-text#Promotion2" // /footer.jsonc
+      "image#Logo" // /footer.jsonc
     ]
   },
 

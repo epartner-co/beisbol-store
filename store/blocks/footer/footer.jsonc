@@ -239,7 +239,7 @@
         "FooterTitle",
         "FooterTitle--institutional"
       ],
-      "text": "Institucional"
+      "text": "¿Quienes somos?"
     }
   },
   // ! Company
@@ -281,7 +281,7 @@
         "FooterTitle",
         "FooterTitle--client"
       ],
-      "text": "Atención al cliente"
+      "text": "Servicio al Cliente"
     }
   },
   // ! Number Client
@@ -344,6 +344,44 @@
         "Footer__Text--warranty"
       ],
       "text": "[Política de Garantía](#)"
+    }
+  },
+
+  // * Terms  Section
+  // ! Title Terms
+  "rich-text#TitleTerms": {
+    "props": {
+      "blockClass": [
+        "FooterTitle",
+        "FooterTitle--terms"
+      ],
+      "text": "Términos y condiciones"
+    }
+  },
+  // ! Terms Text
+  "rich-text#TermsText": {
+    "props": {
+      "blockClass": [
+        "Footer__Text",
+        "Footer__Text--terms-2"
+      ],
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+    }
+  },
+
+  // ! Company image
+  "image#Logo": {
+    "props": {
+      "blockClass": [
+        "Footer__image",
+        "Footer__image--company"
+      ],
+      "src": "https://beisbol.vteximg.com.br/arquivos/logo-vtex-color.png",
+      "link": {
+        "url": "/",
+        "label": "Beisbol",
+        "newTab": false
+      }
     }
   }
 }

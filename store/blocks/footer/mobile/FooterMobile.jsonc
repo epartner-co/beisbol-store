@@ -2,15 +2,24 @@
   // * Footer Mobile
   "footer-layout.mobile": {
     "children": [
-      "flex-layout.row#FooterPromotional",
+      "flex-layout.row#CompanyLogo",
+      "flex-layout.row#FooterPaymentMethods",
+      // "flex-layout.row#FooterPromotional",
       "flex-layout.row#FooterGroups",
       "flex-layout.row#FooterSocials",
-      "flex-layout.row#FooterPaymentMethods",
       "flex-layout.row#FooterInformation",
-      "rich-text#CopyRight" // /footer.jsonc
+      "flex-layout.row#FooterTerms"
+      // "rich-text#CopyRight" // /footer.jsonc
+    ]
+  },
 
-      // "flex-layout.row#1-footer-mobile",
-      // "flex-layout.row#2-footer-mobile"
+  // ! Logo company section
+  "flex-layout.row#CompanyLogo": {
+    "props": {
+      "blockClass": ["Footer-Logo"]
+    },
+    "children": [
+      "image#Logo" // /footer.jsonc
     ]
   },
 
@@ -111,6 +120,22 @@
     }
   },
 
+  // ! Terms Section
+  "flex-layout.row#FooterTerms": {
+    "props": {
+      "blockClass": ["Footer-Terms"]
+    },
+    "children": ["flex-layout.col#FooterTerms"]
+  },
+  "flex-layout.col#FooterTerms": {
+    "props": {
+      "blockClass": ["Footer-Terms__container"]
+    },
+    "children": [
+      "disclosure-layout-group#FooterTerms" // /FooterMenuTerms.jsonc
+    ]
+  },
+  /*******************************/
   "flex-layout.row#1-footer-mobile": {
     "props": {
       "paddingTop": 4,

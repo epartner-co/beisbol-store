@@ -16,7 +16,7 @@
   "rich-text#top-text": {
     "props": {
       "blockClass": ["Header-top-text"],
-      "text": "¡Selecciona los productos que están en promoción! [¡Míralos!](#)"
+      "text": "ENVIÓ GRATIS POR COMPRAS MAYORES DE $$$$. (APLICAN TÉRMINOS Y CONDICIONES)"
     }
   }
 }

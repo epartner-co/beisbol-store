@@ -5,9 +5,10 @@
   display: block;
   padding: 0 10px;
   padding-right: 0;
+  max-width: 130px;
 }
 .logoImage {
-  width: 100px;
+  width: 130px;
 }
 /* ------------------------------- */
 /* //* Footer */
@@ -23,12 +24,25 @@
 }
 .imageElement--Footer__image--payments {
   width: 90%;
+  border-radius: 8px;
+  filter: none;
+  opacity: 1;
 }
 .imageElement--Footer__image--development {
   width: 150px;
 }
 .imageElement--Footer__image--technology {
   width: 105px;
+}
+.imageElementLink--Footer__image--company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imageElement--Footer__image--company {
+  width: 65%;
+  filter: none;
+  opacity: 1;
 }
 /* ------------------------------- */
 /* //* Home */
@@ -88,8 +102,8 @@
   font-style: normal;
   font-weight: 400;
   text-transform: initial;
-  background-color: #001689;
-  border-color: #001689;
+  background-color: #28508c;
+  border-color: #28508c;
   border-radius: 51px;
   transition: 0.3s;
 }
@@ -155,13 +169,14 @@
 .infoCardCallActionContainer--CategorySlide__Item
   :global(.vtex-button) {
   display: flex;
-  color: #8f8f8f;
+  color: #0891d0;
   background-color: transparent;
   border-color: transparent;
   font-family: Urbanist;
   font-size: 15px;
   font-weight: 500;
   text-align: left;
+  text-transform: capitalize;
   transition: 0.3s;
 }
 .infoCardContainer--CategorySlide__Item:hover
@@ -191,6 +206,7 @@
   font-style: normal;
   font-weight: 700;
   text-align: left;
+  text-transform: uppercase;
 }
 .infoCardSubhead--BannerTop__item--1 {
   margin-top: 0;
@@ -211,13 +227,14 @@
 }
 .infoCardCallActionContainer--BannerTop__item--1
   :global(.vtex-button__label) {
-  padding: 15px 20px !important;
+  padding: 10px 20px !important;
   color: #001689;
   font-family: Urbanist;
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
   text-align: center;
+  text-transform: none;
 }
 .infoCardTextContainer--BannerTop__item--2 {
   margin-right: 170px;
@@ -255,10 +272,10 @@
 }
 .infoCardCallActionContainer--BannerTop__item--2
   :global(.vtex-button__label) {
-  padding: 15px 20px !important;
+  padding: 10px 20px !important;
   color: #001689;
   font-family: Urbanist;
-  font-size: 15px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 700;
   text-align: center;
@@ -358,19 +375,26 @@
 .label--Newsletter {
   display: flex;
   flex-direction: column;
-  color: #001689;
-  font-family: Roboto;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  text-transform: uppercase;
+  color: white;
+  font-family: Urbanist;
+  font-size: 55px;
+  font-weight: 700;
+  text-align: center;
 }
 .label--Newsletter::before {
-  content: 'Recíbe 20% DTCO en tu primera compra';
-  margin-bottom: 10px;
-  color: #001689;
+  content: 'Recíbe';
+  color: white;
   font-family: Roboto;
   font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.label--Newsletter::after {
+  content: 'En tu primera compra';
+  color: white;
+  font-family: Roboto;
+  font-size: 25px;
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
@@ -386,6 +410,17 @@
   font-weight: 300;
   text-align: left;
   outline: none;
+}
+.form--Newsletter .inputGroup {
+  padding-top: 0;
+}
+.form--Newsletter .inputGroup::before {
+  content: 'Suscríbete a nuestro Newsletter';
+  margin-bottom: 16px;
+  padding-top: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 15px;
 }
 .label--Newsletter .inputGroup::placeholder {
   color: #c5c5c5;
@@ -406,7 +441,7 @@
   font-family: Roboto;
   font-size: 20px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 100;
   text-align: left;
   border-radius: 100px;
 }
@@ -415,12 +450,14 @@
   :global(.vtex-styleguide-9-x-input)::placeholder {
   color: #c5c5c5;
   font-size: 20px;
+  font-weight: 100;
 }
 .inputGroup
   .buttonContainer--Newsletter
   :global(.vtex-button) {
-  background-color: #001689;
+  background-color: #28508c;
   border-width: 1px;
+  border-color: #28508c;
   border-radius: 100px;
 }
 .inputGroup
@@ -498,8 +535,9 @@
   border-radius: 5px;
 }
 .productImageTag--main {
-  box-shadow: 0px 4px 15px 0px #0000001a;
+  background-color: white;
   border-radius: 5px;
+  box-shadow: 0px 4px 15px 0px #0000001a;
 }
 /* .skuSelectorInternalBox {
   background: white;
@@ -601,6 +639,11 @@
   .newsletter--Newsletter {
     background-size: cover;
   }
+
+  /* !Footer */
+  .imageElement--Footer__image--company {
+    width: 35%;
+  }
 }
 
 @media (min-width: 900px) {
@@ -643,6 +686,16 @@
   }
   .imageElement--Footer__image--technology {
     margin-top: 12px;
+  }
+  .imageElementLink--Footer__image--company {
+    justify-content: flex-start;
+  }
+  .imageElement--Footer__image--company {
+    width: 80%;
+  }
+  .imageElement--Footer__image--payments {
+    width: 135%;
+    max-width: 150%;
   }
 
   /* ! Top Slide */
@@ -705,6 +758,9 @@
     height: 280px;
     background-image: url('https://beisbol.vteximg.com.br/arquivos/imagen-banner-nueva-presentacion-desktop.png');
   }
+  .infoCardHeadline--BannerTop__item--2::after {
+    right: -80px;
+  }
 
   /* ! Newsletter */
   .container--Newsletter {
@@ -713,22 +769,53 @@
   .newsletter--Newsletter {
     background-image: url('https://beisbol.vteximg.com.br/arquivos/banner-newsletter-desktop.png');
   }
-  .label--Newsletter {
-    font-size: 20px;
-  }
-  .label--Newsletter::before {
-    font-size: 25px;
-  }
   .inputGroup--Newsletter {
     flex-direction: row;
   }
   .buttonContainer--Newsletter {
-    padding-top: 0;
+    padding-top: 25px;
+    padding-left: 0;
+  }
+  .form--Newsletter {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    max-width: 100%;
+  }
+  .label--Newsletter {
+    align-items: flex-start;
+    width: 40%;
+    font-size: 60px;
+  }
+  .label--Newsletter::before {
+    font-size: 30px;
+  }
+  .label--Newsletter::after {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .inputGroup--Newsletter {
+    flex-direction: column;
+    width: 40%;
+  }
+  .label--Newsletter::after {
+    content: 'En tu primera compra suscríbete a nuestro Newsletter';
+    text-align: start;
+  }
+  .form--Newsletter .inputGroup::before {
+    content: '';
   }
 
   /* ! Product page */
   .productImagesGallerySlide {
     width: 100% !important;
+  }
+}
+
+@media (min-width: 1500px) {
+  /* ! Footer */
+  .imageElement--Footer__image--payments {
+    width: 100%;
   }
 }
 
@@ -744,12 +831,6 @@
   }
 }
 
-@media (min-width: 1700px) {
-  /* ! Product page */
-  .productImageTag--main {
-    object-fit: cover !important;
-  }
-}
 /* ------------------------------- */
 .notificationBarContainer {
   background-color: #e6f1e6;
@@ -782,7 +863,6 @@
 } */
 
 .inputGroup {
-  padding-bottom: 4px;
   display: flex;
   color: #fff;
 }

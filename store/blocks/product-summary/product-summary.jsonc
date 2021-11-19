@@ -32,7 +32,7 @@
   "add-to-cart-button#ProductShelfHome": {
     "props": {
       "blockClass": "summary",
-      "text": "Agregar"
+      "text": "Agregar al carrito"
     }
   },
 

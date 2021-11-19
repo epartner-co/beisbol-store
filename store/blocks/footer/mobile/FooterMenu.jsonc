@@ -4,10 +4,10 @@
       "blockClass": ["Disclosure"]
     },
     "children": [
-      "disclosure-layout#Attention",
-      "disclosure-layout#Support",
       "disclosure-layout#Politics",
-      "disclosure-layout#Institutional"
+      "disclosure-layout#Institutional",
+      "disclosure-layout#Attention",
+      "disclosure-layout#Support"
     ]
   },
 
