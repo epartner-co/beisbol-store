@@ -10,7 +10,7 @@
   transition: 0.3s;
 }
 .sliderArrows:hover {
-  color: #001689;
+  color: #28508C;
 }
 /* ! Top Slide */
 .paginationDot--TopSlide__Container {
@@ -38,7 +38,7 @@
   background-color: #c4c4c4;
 }
 .paginationDot--Shelf__Slider--isActive {
-  background-color: #001689;
+  background-color: #28508C;
 }
 
 /* ------------------------------- */

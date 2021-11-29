@@ -57,7 +57,8 @@
     "children": [
       "image#Facebook",
       "image#Instagram",
-      "image#Twitter"
+      "image#Youtube"
+      // "image#Twitter"
     ]
   },
   // ! Facebook Icon
@@ -67,7 +68,7 @@
         "Footer__image",
         "Footer__image--facebook"
       ],
-      "src": "https://beisbol.vteximg.com.br/arquivos/icon-facebook.png",
+      "src": "https://beisbol.vteximg.com.br/arquivos/facebook-icono-footer.png",
       "link": {
         "url": "#",
         "label": "Facebook",
@@ -82,7 +83,7 @@
         "Footer__image",
         "Footer__image--instagram"
       ],
-      "src": "https://beisbol.vteximg.com.br/arquivos/icon-instagram.png",
+      "src": "https://beisbol.vteximg.com.br/arquivos/instagram-icono-footer.png",
       "link": {
         "url": "#",
         "label": "Instagram",
@@ -101,6 +102,21 @@
       "link": {
         "url": "#",
         "label": "Twitter",
+        "newTab": true
+      }
+    }
+  },
+  // ! Youtube Icon
+  "image#Youtube": {
+    "props": {
+      "blockClass": [
+        "Footer__image",
+        "Footer__image--Youtube"
+      ],
+      "src": "https://beisbol.vteximg.com.br/arquivos/youtube-icono-footer.png",
+      "link": {
+        "url": "#",
+        "label": "Youtube",
         "newTab": true
       }
     }
@@ -124,7 +140,7 @@
         "Footer__image",
         "Footer__image--payments"
       ],
-      "src": "https://beisbol.vteximg.com.br/arquivos/payments-image.png"
+      "src": "https://beisbol.vteximg.com.br/arquivos/medios-pago-footer.png"
     }
   },
 
@@ -146,7 +162,7 @@
         "Footer__image",
         "Footer__image--development"
       ],
-      "src": "https://beisbol.vteximg.com.br/arquivos/logo-epartner-color.png",
+      "src": "https://beisbol.vteximg.com.br/arquivos/epartner-icono-footer.png",
       "link": {
         "url": "https://digitalepartner.com/",
         "label": "ePartner",
@@ -162,7 +178,7 @@
         "Footer__image",
         "Footer__image--technology"
       ],
-      "src": "https://beisbol.vteximg.com.br/arquivos/logo-vtex-color.png",
+      "src": "https://beisbol.vteximg.com.br/arquivos/vtex-icono-footer.png",
       "link": {
         "url": "https://vtex.com/co-es",
         "label": "VTEX",
@@ -376,7 +392,7 @@
         "Footer__image",
         "Footer__image--company"
       ],
-      "src": "https://beisbol.vteximg.com.br/arquivos/logo-vtex-color.png",
+      "src": "https://beisbol.vteximg.com.br/arquivos/beisbol-logo-footer.png",
       "link": {
         "url": "/",
         "label": "Beisbol",

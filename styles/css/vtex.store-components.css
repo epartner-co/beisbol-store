@@ -14,12 +14,9 @@
 /* //* Footer */
 /* ------------------------------- */
 .imageElement--Footer__image {
-  filter: grayscale(1);
-  opacity: 0.7;
   transition: 0.3s;
 }
 .imageElement--Footer__image:hover {
-  filter: grayscale(0);
   opacity: 1;
 }
 .imageElement--Footer__image--payments {
@@ -32,7 +29,7 @@
   width: 150px;
 }
 .imageElement--Footer__image--technology {
-  width: 105px;
+  transform: translateY(60%);
 }
 .imageElementLink--Footer__image--company {
   display: flex;
@@ -182,7 +179,7 @@
 .infoCardContainer--CategorySlide__Item:hover
   .infoCardCallActionContainer--CategorySlide__Item
   :global(.vtex-button) {
-  color: #001689;
+  color: #28508c;
   font-weight: 700;
 }
 .infoCardCallActionContainer--CategorySlide__Item
@@ -212,7 +209,7 @@
   margin-top: 0;
   padding: 0 9px;
   color: white;
-  background-color: #001689;
+  background-color: #28508c;
   font-family: Urbanist;
   font-size: 38px;
   font-style: normal;
@@ -228,7 +225,7 @@
 .infoCardCallActionContainer--BannerTop__item--1
   :global(.vtex-button__label) {
   padding: 10px 20px !important;
-  color: #001689;
+  color: #28508c;
   font-family: Urbanist;
   font-size: 15px;
   font-style: normal;
@@ -250,19 +247,6 @@
   font-weight: 700;
   text-align: left;
 }
-.infoCardHeadline--BannerTop__item--2::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: -70px;
-  right: -155px;
-  width: 154px;
-  height: auto;
-  background-image: url('https://beisbol.vteximg.com.br/arquivos/image banner-mas-aroma-para-tu-economia-mobile.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 .infoCardCallActionContainer--BannerTop__item--2
   :global(.vtex-button) {
   background-color: white;
@@ -273,7 +257,7 @@
 .infoCardCallActionContainer--BannerTop__item--2
   :global(.vtex-button__label) {
   padding: 10px 20px !important;
-  color: #001689;
+  color: #28508c;
   font-family: Urbanist;
   font-size: 13px;
   font-style: normal;
@@ -295,7 +279,7 @@
 }
 .infoCardCallActionContainer--BannerBottom__item--1
   :global(.vtex-button) {
-  background-color: #001689;
+  background-color: #28508c;
   border-width: 1px;
   border-radius: 100px;
   transition: 0.3s;
@@ -336,7 +320,7 @@
 .infoCardHeadline--BannerBottom__item--2 {
   margin-top: 0;
   padding: 5px 10px;
-  color: #001689;
+  color: #28508c;
   background-color: white;
   font-family: Urbanist;
   font-size: 20px;
@@ -348,7 +332,7 @@
 .infoCardSubhead--BannerBottom__item--2 {
   margin-top: 5px;
   padding: 5px 10px;
-  color: #001689;
+  color: #28508c;
   background-color: white;
   font-family: Urbanist;
   font-size: 20px;
@@ -477,7 +461,7 @@
 /* ------------------------------- */
 .productNameContainer {
   margin-bottom: 10px;
-  color: #001689;
+  color: #28508c;
   font-family: Urbanist;
   font-size: 25px;
   font-style: normal;
@@ -531,7 +515,7 @@
   left: -0.1rem;
   right: -0.1rem;
   bottom: -0.1rem;
-  border: 1.9px solid #001689;
+  border: 1.9px solid #28508c;
   border-radius: 5px;
 }
 .productImageTag--main {
@@ -608,7 +592,7 @@
   transition: 0.3s;
 }
 .swiperCaret:hover {
-  color: #001689;
+  color: #28508c;
 }
 /* ------------------------------- */
 /* //? Medias Query */
@@ -621,6 +605,19 @@
   }
   .infoCardTextContainer--BannerBottom__item--2 {
     margin-left: 0;
+  }
+  .infoCardHeadline--BannerTop__item--2::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: -70px;
+    right: -155px;
+    width: 154px;
+    height: auto;
+    background-image: url('https://beisbol.vteximg.com.br/arquivos/image banner-mas-aroma-para-tu-economia-mobile.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   /* ! Product page */
   .swiperCaret {
@@ -677,7 +674,7 @@
     border-radius: 50px;
   }
   .searchBarIcon--search {
-    color: #001689;
+    color: #28508c;
   }
 
   /* ! Footer */
@@ -816,6 +813,14 @@
   /* ! Footer */
   .imageElement--Footer__image--payments {
     width: 100%;
+  }
+}
+
+@media (min-width: 1700px) {
+  /* ! Footer */
+  .imageElement--Footer__image--company {
+    width: 70%;
+    max-width: 75%;
   }
 }
 

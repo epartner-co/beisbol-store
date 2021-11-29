@@ -16,7 +16,7 @@
   text-align: center;
 }
 .link--Header-top-text {
-  color: #001689;
+  color: #28508c;
   text-decoration: none;
 }
 .link--Header-top-text:hover {
@@ -58,7 +58,7 @@
   width: 20px;
   height: 20px;
   /* TODO: Change icons in footer with white label */
-  background-image: url('https://beisbol.vteximg.com.br/arquivos/footer-arrow.png');
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/flecha-abajo-footer.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -74,6 +74,9 @@
   font-size: 17px;
   font-style: normal;
   text-align: center;
+}
+.paragraph--Footer__Text--terms-2 {
+  font-size: 12px;
 }
 .link--Footer__Text {
   color: white;
@@ -117,7 +120,7 @@
   align-items: center;
   margin: 25px 0;
   width: 100%;
-  color: #001689;
+  color: #28508c;
   font-family: Urbanist;
   font-size: 13px;
   font-style: normal;

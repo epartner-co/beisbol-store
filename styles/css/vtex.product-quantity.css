@@ -26,7 +26,7 @@
   font-family: Urbanist;
   font-size: 25px;
   font-weight: 400;
-  color: #001689;
+  color: #28508c;
 }
 .quantitySelectorStepper
   :global(.vtex-numeric-stepper__plus-button),
@@ -46,7 +46,7 @@
   font-family: Urbanist;
   font-size: 25px;
   font-weight: 400;
-  color: #001689;
+  color: #28508c;
 }
 
 @media (min-width: 640px) {
