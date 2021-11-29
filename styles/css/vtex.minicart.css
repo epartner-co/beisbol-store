@@ -7,14 +7,118 @@
 .minicartContainer :global(.vtex-button) {
   width: 25px;
   height: 25px;
-  background-image: url('https://beisbol.vteximg.com.br/arquivos/icono-cart.png');
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/icono-carrito-header.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 .minicartQuantityBadge {
-  top: -20px;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  color: #0891d0;
+  background-color: transparent;
+  font-family: 'Urbanist';
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  transform: translate(40%, -50%);
+}
+/* ------------------------------- */
+/* //* MiniCart V2 Component */
+/* ------------------------------- */
+.overlay {
+  background-color: #00000070;
+}
+.minicartTitle {
+  font-size: 0;
+}
+.minicartTitle::before {
+  color: #28508c;
+  content: 'Carrito de compra';
+  font-family: Urbanist;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: left;
+}
+.closeIconButton {
+  color: #28508c;
+}
+.drawer
+  :global(.vtex-product-list-0-x-productImage) {
+  background-color: white;
+  box-shadow: 0px 4px 15px 0px #0000001a;
+}
+.drawer
+  :global(.vtex-product-list-0-x-productName) {
+  color: #0891d0;
+  font-weight: 400;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+.drawer
+  :global(.vtex-product-list-0-x-productVariationsContainer) {
+  color: #0891d0;
+  font-weight: 400;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+.drawer :global(.vtex-dropdown__container) {
+  border: 1px solid #c8c8c8;
+  border-radius: 100px;
+}
+.drawer :global(.vtex-dropdown__button) {
+  color: #28508c;
+}
+.drawer
+  :global(.vtex-product-list-0-x-productBrandName) {
+  color: #0891d0;
+  font-weight: 400;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+.drawer
+  :global(.vtex-product-list-0-x-removeButton) {
+  color: #28508c !important;
+}
+.drawer
+  :global(.vtex-product-list-0-x-productPriceCurrency) {
+  color: #a7a7a7;
+  font-family: Urbanist;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: left;
+}
+.drawer
+  :global(.vtex-product-list-0-x-productPriceContainer) {
+  color: #28508c;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+.minicartCheckoutButton :global(.vtex-button) {
+  background-color: #28508c;
+  border-radius: 100px;
+  border-color: #28508c;
+}
+.minicartCheckoutButton
+  :global(.vtex-button__label) {
+  font-size: 0;
+}
+.minicartCheckoutButton
+  :global(.vtex-button__label)::before {
+  content: 'Finalizar compra';
+  font-family: Urbanist;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* ------------------------------- */

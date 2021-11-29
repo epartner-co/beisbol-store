@@ -2,9 +2,6 @@
   // * Header Desktop
   "header-layout.desktop": {
     "children": [
-      // "flex-layout.row#1-desktop",
-      // "flex-layout.row#2-desktop",
-      // "flex-layout.row#3-desktop",
       "rich-text#top-text",
       "sticky-layout#4-desktop"
     ]
@@ -13,11 +10,14 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#Header"]
+    "children": [
+      "header-row#Header-1",
+      "header-row#Header-2"
+    ]
   },
 
-  // * Header Container
-  "flex-layout.row#Header": {
+  // * Header Row 1
+  "header-row#Header-1": {
     "props": {
       "blockClass": [
         "main-header",
@@ -30,64 +30,42 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#LeftMenu",
-      "flex-layout.col#logo-desktop",
-      "flex-layout.row#Options"
-      // "flex-layout.col#spacer",
+      "logo#desktop",
+      "header-spacer",
+      "search-bar",
+      "login",
+      "minicart.v2"
     ]
   },
-
-  // ! Logo container
-  "flex-layout.col#logo-desktop": {
-    "props": {
-      "blockClass": [
-        "Header-Desktop__container",
-        "Header-Desktop__container--logo"
-      ],
-      "verticalAlign": "middle"
-    },
-    "children": ["logo#desktop"]
-  },
-  // * Logo
+  // ! Logo
   "logo#desktop": {
     "props": {
       "blockClass": ["Header-Desktop__Logo"],
       "title": "Logo Beisbol",
       "href": "/",
-      "url": "https://beisbol.vteximg.com.br/arquivos/Logo.png",
-      "width": "180"
+      "url": "https://beisbol.vteximg.com.br/arquivos/logo-beisbol-header.png"
     }
   },
 
-  // ! Left container
-  "flex-layout.col#LeftMenu": {
+  // * Header Row 2
+  "header-row#Header-2": {
     "props": {
       "blockClass": [
-        "Header-Desktop__container",
-        "Header-Desktop__container--left"
+        "main-header",
+        "Header__Container"
       ],
-      "verticalAlign": "middle"
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
     },
     "children": [
       "vtex.menu@2.x:menu#category-menu"
     ]
   },
 
-  // ! Right Container
-  "flex-layout.row#Options": {
-    "props": {
-      "blockClass": [
-        "Header-Desktop__container",
-        "Header-Desktop__container--right"
-      ]
-    },
-    "children": [
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
-    ]
-  },
+  //************************
 
   "flex-layout.row#1-desktop": {
     "children": ["telemarketing"],

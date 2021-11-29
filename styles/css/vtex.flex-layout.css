@@ -160,7 +160,6 @@
   margin: 5px 15px 0;
   padding: 5px 10px 0;
   width: auto;
-  border-top: 1px solid #d3d3d3;
 }
 .flexCol--Product__Information {
   margin: 0 25px;
@@ -170,13 +169,14 @@
 }
 .flexRowContent--Product__BuyButton
   :global(.vtex-button) {
+    margin-top: 10px;
   background-color: #28508c;
   border-color: #28508c;
   border-radius: 100px;
 }
 .flexRowContent--Product__BuyButton
   :global(.vtex-button__label) {
-  padding: 10px 0 !important;
+  padding: 20px 0 !important;
   font-size: 15px;
 }
 .flexRow--Product__Container {

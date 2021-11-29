@@ -1,3 +1,13 @@
+/* ------------------------------- */
+/* //? Medias Query */
+/* ------------------------------- */
+@media (min-width: 1200px) {
+  /* ! Header */
+  .headerRowContainer--Header__Container {
+    padding: 0 100px;
+  }
+}
+/* ------------------------------- */
 /* add transitions */
 :global(.vtex-sticky-layout-0-x-container)
   :global(.vtex-store-components-3-x-logoLink),
@@ -36,7 +46,8 @@
  */
 :global(.vtex-sticky-layout-0-x-wrapper--stuck)
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-  transition: padding 0.3s ease, background 0.3s ease;
+  transition: padding 0.3s ease,
+    background 0.3s ease;
   padding-top: 0;
   padding-bottom: 0;
 }

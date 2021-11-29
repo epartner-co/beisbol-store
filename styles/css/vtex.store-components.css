@@ -475,7 +475,7 @@
   margin-top: 20px;
 }
 .productDescriptionText {
-  color: #8f8f8f;
+  color: #0891D0;
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
@@ -490,13 +490,13 @@
   text-align: left;
 }
 .skuSelectorName {
+  color: #0891D0;
   font-family: Urbanist;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   text-align: left;
   text-transform: capitalize;
-  color: #8f8f8f;
 }
 .skuSelectorContainer {
   margin: 0 0 1rem;
@@ -594,6 +594,7 @@
 .swiperCaret:hover {
   color: #28508c;
 }
+
 /* ------------------------------- */
 /* //? Medias Query */
 /* ------------------------------- */
@@ -659,8 +660,12 @@
 
 @media (min-width: 1200px) {
   /* ! Header */
+  .headerRowContainer--Header__Container {
+    padding: 0 100px;
+  }
   .searchBarContainer {
-    width: 75% !important;
+    width: 60% !important;
+    max-width: 65%;
   }
   .autoCompleteOuterContainer
     :global(.vtex-input-prefix__group) {

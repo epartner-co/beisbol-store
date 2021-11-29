@@ -4,6 +4,7 @@
 .quantitySelectorTitle {
   margin-right: 25px;
   margin-bottom: 0;
+  color: #0891d0;
   font-family: Urbanist;
   font-style: normal;
   font-weight: 400;
@@ -17,16 +18,16 @@
 }
 .quantitySelectorStepper
   :global(.vtex-numeric-stepper__input) {
-  border-radius: 100% !important;
+  margin-right: 5px;
   width: 45px !important;
   height: 45px;
-  border: 1px solid #c8c8c8;
+  color: #28508c;
   background-color: white;
-  margin-right: 5px;
+  border-radius: 100% !important;
+  border: 1px solid #c8c8c8;
   font-family: Urbanist;
   font-size: 25px;
   font-weight: 400;
-  color: #28508c;
 }
 .quantitySelectorStepper
   :global(.vtex-numeric-stepper__plus-button),

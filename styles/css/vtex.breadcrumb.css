@@ -2,25 +2,27 @@
 /* //* Product page */
 /* ------------------------------- */
 .container :global(.vtex-breadcrumb-1-x-link) {
-  color: #8f8f8f;
+  color: #0891d0;
   font-family: 'Roboto';
   font-weight: 100;
+}
+.arrow {
+  color: #0891d0;
 }
 .homeLink::before {
   content: '';
   display: block;
   width: 25px;
   height: 25px;
-  color: #28508C;
-  /* TODO: Change Icon environment image */
-  background-image: url('https://epartner.vteximg.com.br/arquivos/home-product-page-icon.png');
+  color: #28508c;
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/home-icon-product.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   transform: translateY(-4px);
 }
 .term {
-  color: #8f8f8f;
+  color: #28508c;
   font-weight: 700;
 }
 .homeIcon {

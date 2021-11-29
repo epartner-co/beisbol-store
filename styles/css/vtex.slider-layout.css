@@ -10,7 +10,7 @@
   transition: 0.3s;
 }
 .sliderArrows:hover {
-  color: #28508C;
+  color: #28508c;
 }
 /* ! Top Slide */
 .paginationDot--TopSlide__Container {
@@ -21,6 +21,9 @@
 }
 .flexRowContent--Home__CategorySlide {
   margin-top: 30px;
+}
+.sliderLayoutContainer--CategorySlide__Container {
+  padding: 0 15px;
 }
 /* ! Slide category */
 .slideChildrenContainer--CategorySlide__Container {
@@ -38,7 +41,7 @@
   background-color: #c4c4c4;
 }
 .paginationDot--Shelf__Slider--isActive {
-  background-color: #28508C;
+  background-color: #28508c;
 }
 
 /* ------------------------------- */
