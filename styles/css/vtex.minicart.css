@@ -12,6 +12,9 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.minicartContainer :global(.vtex-button):hover {
+  background-color: transparent;
+}
 .minicartQuantityBadge {
   top: 50%;
   left: 50%;
@@ -99,8 +102,10 @@
   color: #28508c;
   font-family: Urbanist;
   font-size: 20px;
-  font-weight: 700;
   text-align: left;
+}
+.drawer :global(.vtex-product-list-0-x-price) {
+  font-weight: 700;
 }
 .minicartCheckoutButton :global(.vtex-button) {
   background-color: #28508c;

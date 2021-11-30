@@ -50,6 +50,9 @@
   width: 100%;
   max-width: 100%;
 }
+.discountInsideContainer {
+  display: none;
+}
 /* ! Top Slide */
 .infoCardContainer--TopSlide__Item {
   width: 100%;
@@ -443,6 +446,13 @@
   border-width: 1px;
   border-color: #28508c;
   border-radius: 100px;
+  transition: 0.3s;
+}
+.inputGroup
+  .buttonContainer--Newsletter
+  :global(.vtex-button):hover {
+  background-color: #183054;
+  border-color: #183054;
 }
 .inputGroup
   .buttonContainer--Newsletter
@@ -475,7 +485,7 @@
   margin-top: 20px;
 }
 .productDescriptionText {
-  color: #0891D0;
+  color: #0891d0;
   font-family: Urbanist;
   font-size: 16px;
   font-style: normal;
@@ -490,7 +500,7 @@
   text-align: left;
 }
 .skuSelectorName {
-  color: #0891D0;
+  color: #0891d0;
   font-family: Urbanist;
   font-style: normal;
   font-weight: 400;
@@ -523,11 +533,6 @@
   border-radius: 5px;
   box-shadow: 0px 4px 15px 0px #0000001a;
 }
-/* .skuSelectorInternalBox {
-  background: white;
-  border: 0;
-  box-shadow: 0px 4px 10px 0px #00000026;
-} */
 .shippingContainer
   :global(.vtex-dropdown__label) {
   font-family: Urbanist;
@@ -596,6 +601,16 @@
 }
 
 /* ------------------------------- */
+/* //* Search Page */
+/* ------------------------------- */
+.infoCardCallActionContainer--Search__Image {
+  display: none;
+}
+.infoCardContainer--Search__Image {
+  height: 240px;
+}
+
+/* ------------------------------- */
 /* //? Medias Query */
 /* ------------------------------- */
 @media (min-width: 640px) {
@@ -610,16 +625,18 @@
   .infoCardHeadline--BannerTop__item--2::after {
     content: '';
     position: absolute;
-    top: 0;
-    bottom: -70px;
+    top: 50%;
+    bottom: unset;
     right: -155px;
-    width: 154px;
-    height: auto;
+    width: 260px;
+    height: 225px;
     background-image: url('https://beisbol.vteximg.com.br/arquivos/image banner-mas-aroma-para-tu-economia-mobile.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    transform: translateY(-50%);
   }
+
   /* ! Product page */
   .swiperCaret {
     display: none;
@@ -761,7 +778,7 @@
     background-image: url('https://beisbol.vteximg.com.br/arquivos/imagen-banner-nueva-presentacion-desktop.png');
   }
   .infoCardHeadline--BannerTop__item--2::after {
-    right: -80px;
+    right: -45%;
   }
 
   /* ! Newsletter */

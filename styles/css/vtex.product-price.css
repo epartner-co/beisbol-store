@@ -11,22 +11,18 @@
   text-align: left;
 }
 .sellingPriceValue {
-  font-size: 25px;
+  margin-top: 10px;
+  color: #16325b;
+  font-family: Urbanist;
+  font-size: 35px;
+  font-weight: 700;
   text-align: left;
 }
-
 /* ------------------------------- */
 /* //* product page */
 /* ------------------------------- */
 .sellingPrice {
   padding: 0;
-}
-.sellingPriceValue {
-  color: #16325B;
-  font-family: Urbanist;
-  font-size: 35px;
-  font-weight: 700;
-  text-align: left;
 }
 .listPriceValue {
   color: #a7a7a7;
@@ -64,7 +60,7 @@
 @media (min-width: 1200px) {
   /* ! Vitrina */
   .sellingPriceValue {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 

@@ -1,12 +1,214 @@
+/* ------------------------------- */
+/* //* Search Page */
+/* ------------------------------- */
+.galleryTitle--layout {
+  margin: 0;
+  color: #28508c;
+  font-family: Urbanist;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+.orderByButton {
+  margin: 0;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 0;
+}
+.orderByButton::after {
+  content: '';
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/flecha-icono-search.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.orderByDropdown {
+  padding: 0;
+}
+.filterPopupArrowIcon {
+  display: none;
+}
+.filterPopupButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  height: auto;
+  border: 0;
+}
+.filterPopupButton::after {
+  content: '';
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/filtro-icono-search.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.filterPopupTitle {
+  color: #28508c;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-weight: 600;
+}
+.totalProducts--layout {
+  color: #28508c;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 700;
+}
+.totalProductsMessage {
+  color: #28508c;
+  font-weight: 400;
+}
+.buttonShowMore--layout {
+  padding: 0 0 29px;
+}
+.buttonShowMore :global(.vtex-button) {
+  background-color: #28508c;
+  border: 1px solid #28508c;
+  border-radius: 100px;
+  transition: 0.3s;
+}
+.buttonShowMore :global(.vtex-button):hover {
+  background-color: #183054;
+  border-color: #183054;
+}
+.buttonShowMore :global(.vtex-button__label) {
+  font-size: 0;
+}
+.buttonShowMore
+  :global(.vtex-button__label)::before {
+  content: 'Ver más';
+  padding: 12px 25px !important;
+  font-family: Urbanist;
+  font-size: 15px;
+  font-weight: 600;
+}
+.filterButtonsBox {
+  flex-direction: row-reverse;
+}
+.filterClearButtonWrapper {
+  padding-left: 5px;
+  padding-right: 10px;
+}
+.filterApplyButtonWrapper {
+  padding-left: 10px;
+  padding-right: 5px;
+}
+.filterApplyButtonWrapper :global(.vtex-button) {
+  color: white;
+  background-color: #28508c;
+  font-family: 'Urbanist';
+  border: 1px solid #28508c;
+  border-radius: 100px;
+}
+.filterClearButtonWrapper :global(.vtex-button) {
+  color: white;
+  background-color: #8f8f8f;
+  font-family: 'Urbanist';
+  border: 1px solid #8f8f8f;
+  border-radius: 100px;
+}
+.filterAccordionBreadcrumbs {
+  margin: 0 20px;
+  padding: 0px;
+  width: auto;
+  border-bottom: 1px solid #28508c;
+}
+.filterBreadcrumbsText--Search__Filter {
+  color: #28508c;
+  font-family: Urbanist;
+  font-size: 23px;
+  font-weight: 700;
+}
+.accordionFilterContainer--Search__Filter {
+  padding: 0 20px;
+}
+.filterAccordionItemBox--Search__Filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  border-bottom: 1px solid #00168980;
+}
+.filterAccordionItemBox--Search__Filter::after {
+  content: '';
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/flecha-icono-search.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.accordionFilterContent--Search__Filter {
+  padding: 5px;
+}
+.accordionFilterItemTitle--Search__Filter {
+  color: #28508c;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.accordionFilterItemIcon--Search__Filter {
+  display: none;
+}
+.accordionFilter .ReactCollapse--collapse .pl8 {
+  padding: 0 20px;
+}
+.accordionFilterOpen--Search__Filter {
+  padding: 0;
+}
+.accordionFilterOpen--Search__Filter
+  .filterAccordionItemBox {
+  padding: 20px 0 0;
+  min-height: 0;
+  border-bottom: 0;
+}
+.filterAccordionItemBox
+  :global(.vtex-checkbox__label) {
+  margin-left: 10px;
+  color: #0891d0;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-weight: 400;
+}
+.accordionFilterItemTag--Search__Filter {
+  margin-left: 35px;
+}
+.accordionFilterItemTag--Search__Filter
+  :global(.vtex-tag) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  min-width: 25px;
+  min-height: 25px;
+  background-color: #28508c;
+  border-radius: 100%;
+  font-family: Urbanist;
+  font-size: 14px;
+  line-height: normal;
+}
+
+/* ------------------------------- */
+
 .galleryLayoutOptionButton {
-  background-color: #F0F0F0;
-  color: #3F3F40;
+  background-color: #f0f0f0;
+  color: #3f3f40;
   padding: 0.375rem 0.75rem 0.375rem 0.75rem;
 }
 
 .galleryLayoutOptionButton--selected {
-  background-color: #3F3F40;
-  color: #FFFFFF;
+  background-color: #3f3f40;
+  color: #ffffff;
 }
 
 .galleryLayoutSwitcher {
@@ -14,9 +216,9 @@
   justify-content: center;
   overflow: hidden;
   width: auto !important;
-  align-self: center
+  align-self: center;
 }
 
 .galleryItem--list {
-  border-bottom: 1px #E7E9EE solid;
+  border-bottom: 1px #e7e9ee solid;
 }

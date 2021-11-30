@@ -20,6 +20,9 @@
   background-size: 100%;
   background-repeat: no-repeat;
 }
+.container :global(.vtex-button):hover {
+  background-color: transparent;
+}
 /* ------------------------------- */
 /* //? Medias Query */
 /* ------------------------------- */

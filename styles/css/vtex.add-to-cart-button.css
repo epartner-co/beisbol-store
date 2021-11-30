@@ -13,7 +13,13 @@
   :global(.vtex-button__label) {
   padding: 10px !important;
 }
-
+/* ------------------------------- */
+/* //* Product Page */
+/* ------------------------------- */
+.buttonText {
+  font-family: 'Urbanist';
+  font-size: 18px;
+}
 /* ------------------------------- */
 /* //? Medias Query */
 /* ------------------------------- */

@@ -22,4 +22,10 @@
 .summaryItemContainer {
   color: #28508c;
 }
+.summaryItemLabel {
+  font-weight: bold;
+}
+.summaryItemPrice {
+  font-weight: bold;
+}
 /* ------------------------------- */
