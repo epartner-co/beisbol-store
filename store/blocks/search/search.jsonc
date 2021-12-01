@@ -61,12 +61,26 @@
     ]
   },
 
-  // * Breadcrumb
+  // * Breadcrumb row
   "flex-layout.row#SearchBreadcrumb": {
     "children": ["breadcrumb.search"],
     "props": {
+      "blockClass": [
+        "Search__Row",
+        "Search__Row--Breadcrumb"
+      ],
       "preserveLayoutOnMobile": true,
       "fullWidth": true
+    }
+  },
+  // ! Breadcrumb
+  "breadcrumb.search": {
+    "props": {
+      "blockClass": [
+        "Breadcrumb",
+        "Breadcrumb--Search"
+      ],
+      "showOnMobile": true
     }
   },
 
@@ -135,13 +149,6 @@
       "ListSummary": "product-summary.shelf#HomeVitrinas",
       "GridSummary": "product-summary.shelf#HomeVitrinas"
       // "GridSummary": "product-summary.shelf"
-    }
-  },
-
-  // * Breadcrumb
-  "breadcrumb": {
-    "props": {
-      "showOnMobile": true
     }
   },
 

@@ -209,7 +209,7 @@
   justify-content: center;
   align-items: baseline;
   padding: 2px;
-  border: 1px solid #28508C;
+  border: 1px solid #28508c;
   border-radius: 6px;
 }
 .flexRow--Search__Row--Info {
@@ -221,15 +221,24 @@
   justify-content: center;
   align-items: baseline;
   padding: 2px;
-  border: 1px solid #28508C;
+  border: 1px solid #28508c;
   border-radius: 6px;
 }
 .flexColChild--Search__Column--OrderBy {
   height: auto !important;
 }
 .flexRow--Search__Row--Count {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
+.flexColChild--Search__Column--Filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flexRow--Search__Row--Breadcrumb {
+  padding: 15px 15px 0;
+}
+
 /* ------------------------------- */
 /* //? Medias Query */
 /* ------------------------------- */
@@ -262,6 +271,13 @@
   }
   .flexRowContent--Product {
     flex-direction: column;
+  }
+  /* ! Search page */
+  .flexRow--Search__Row--Info {
+    padding: 30px 0 0;
+  }
+  .flexRow--Search__Row--Count {
+    padding: 5px 0 15px;
   }
 }
 
@@ -365,6 +381,39 @@
     border-top: 0;
     margin: 45px 15px 10px;
   }
+
+  /* ! Search page */
+  .flexCol--filterCol {
+    padding-left: 15px;
+  }
+  .flexRow--Search__Row--Result-Desktop {
+    padding: 0 15px;
+  }
+  .flexCol--Search__Column--Filter-Desktop {
+    padding-right: 20px;
+  }
+  .flexRowContent--Search__Row--SearchInfo-Desktop {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+  }
+  .flexRowContent--Search__Row--Title {
+    padding-bottom: 30px;
+  }
+  .flexRowContent--Search__Row--OrderByAndSwitcher-Desktop {
+    justify-content: flex-end;
+    padding-right: 15px;
+  }
+  .flexRow--Search__Row--Result-Desktop {
+    padding: 0 5%;
+  }
+  .flexRowContent--Search__Row--Title {
+    padding: 30px 5% 50px;
+  }
+  .flexRow--Search__Row--Breadcrumb {
+    padding: 20px 5% 0;
+  }
 }
 
 @media (min-width: 1500px) {
@@ -382,6 +431,11 @@
     margin: 0 85px 0 25px;
     width: auto;
     min-width: 70%;
+  }
+
+  /* ! Search page */
+  .flexCol--Search__Column--Filter-Desktop {
+    padding-right: 100px;
   }
 }
 

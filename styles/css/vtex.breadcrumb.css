@@ -28,5 +28,12 @@
 .homeIcon {
   display: none;
 }
-
+/* ------------------------------- */
+/* //* Search page */
+/* ------------------------------- */
+.arrow--Breadcrumb--Search {
+  font-family: Urbanist;
+  font-size: 15px;
+  font-weight: 700;
+}
 /* ------------------------------- */

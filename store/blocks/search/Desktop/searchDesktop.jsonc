@@ -2,9 +2,11 @@
   // * Search layout Desktop
   "search-result-layout.desktop": {
     "children": [
+      "info-card#Search", // ../search.jsonc
       "flex-layout.row#SearchBreadcrumb", // ../search.jsonc
       "flex-layout.row#SearchTitle", // ../search.jsonc
-      "flex-layout.row#result"
+      "flex-layout.row#result",
+      "newsletter" // ../../newsletter.jsonc
     ],
     "props": {
       "pagination": "show-more",
@@ -20,6 +22,10 @@
       "flex-layout.col#content"
     ],
     "props": {
+      "blockClass": [
+        "Search__Row",
+        "Search__Row--Result-Desktop"
+      ],
       "preventHorizontalStretch": true,
       "fullWidth": true
     }
@@ -28,7 +34,11 @@
   "flex-layout.col#filter": {
     "children": ["filter-navigator.v3"],
     "props": {
-      "blockClass": "filterCol"
+      "blockClass": [
+        "Search__Column",
+        "Search__Column--Filter-Desktop"
+      ]
+      // "blockClass": "filterCol"
     }
   },
   // ! Column Content
@@ -40,12 +50,22 @@
       "flex-layout.row#FetchMore" // ../search.jsonc
     ],
     "props": {
+      "blockClass": [
+        "Search__Column",
+        "Search__Column--Content-Desktop"
+      ],
       "width": "grow",
       "preventVerticalStretch": true
     }
   },
   // ? Row Search Info
   "flex-layout.row#SearchInfo": {
+    "props": {
+      "blockClass": [
+        "Search__Row",
+        "Search__Row--SearchInfo-Desktop"
+      ]
+    },
     "children": [
       "flex-layout.col#productCount",
       "flex-layout.row#orderByAndSwitcher"
@@ -55,25 +75,39 @@
   "flex-layout.col#productCount": {
     "children": ["total-products.v2"],
     "props": {
-      "blockClass": "productCountCol"
+      "blockClass": [
+        "Search__Column",
+        "Search__Column--ProductCount-Desktop"
+      ]
+      // "blockClass": "productCountCol"
     }
   },
   // Row Order by and Switcher
   "flex-layout.row#orderByAndSwitcher": {
     "children": [
-      "order-by.v2",
-      "gallery-layout-switcher"
+      "order-by.v2"
+      // "gallery-layout-switcher"
     ],
     "props": {
+      "blockClass": [
+        "Search__Row",
+        "Search__Row--OrderByAndSwitcher-Desktop"
+      ],
+      // "blockClass": "orderByAndSwitcher",
       "horizontalAlign": "right",
       "preventHorizontalStretch": true,
-      "blockClass": "orderByAndSwitcher",
       "colGap": 3
     }
   },
 
   // ? Row Products
   "flex-layout.row#products": {
+    "props": {
+      "blockClass": [
+        "Search__Row",
+        "Search__Row--Products-Desktop"
+      ]
+    },
     "children": [
       "search-content" // ../search.jsonc
     ]

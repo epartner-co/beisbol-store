@@ -125,6 +125,18 @@
   text-align: center;
   text-transform: uppercase;
 }
+.minicartEmptyStateContainer
+  :global(.vtex-rich-text-0-x-paragraph) {
+  font-size: 0;
+}
+.minicartEmptyStateContainer
+  :global(.vtex-rich-text-0-x-paragraph)::before {
+  content: 'Tu carrito está vacio';
+  font-family: Urbanist;
+  font-size: 17px;
+  font-weight: 700;
+  color: #28508c;
+}
 
 /* ------------------------------- */
 /* //? Medias Query */
