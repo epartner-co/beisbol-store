@@ -611,6 +611,17 @@
 }
 
 /* ------------------------------- */
+/* //* Politics Page */
+/* ------------------------------- */
+.infoCardContainer--Politics__Image {
+  height: 202px;
+}
+.infoCardCallActionContainer--Politics__Image {
+  display: none;
+}
+
+
+/* ------------------------------- */
 /* //? Medias Query */
 /* ------------------------------- */
 @media (min-width: 640px) {
@@ -713,7 +724,7 @@
     width: 80%;
   }
   .imageElement--Footer__image--payments {
-    width: 135%;
+    width: 100%;
     max-width: 150%;
   }
 

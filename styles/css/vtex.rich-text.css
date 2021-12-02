@@ -209,6 +209,56 @@
 .headingLevel2--Title--most-selling {
   margin-top: 70px;
 }
+
+/* ------------------------------- */
+/* //* Politics page*/
+/* ------------------------------- */
+.headingLevel1--Politics__Title {
+  font-family: Urbanist;
+  font-size: 52px;
+  font-weight: 700;
+  color: #001689;
+  margin: 20px 0 50px;
+  text-transform: uppercase;
+}
+.container--Politics__Title {
+  padding: 0 15px;
+}
+.wrapper--Politics__Group-Title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+  padding: 0 25px;
+  width: 100%;
+  color: white;
+}
+.wrapper--Politics__Group-Title::after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  /* TODO: Change store URL resource */
+  background-image: url('https://epartner.vteximg.com.br/arquivos/arrow-icon-politics.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.paragraph--Politics__Group-Title {
+  margin: 12px 0;
+  font-family: Urbanist;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.paragraph--Politics__Text {
+  margin: 0;
+}
+.container--Politics__Text {
+  color: #0891d0;
+  font-family: 'Urbanist';
+  font-size: 18px;
+}
+
 /* //? Medias Query */
 /* ------------------------------- */
 @media (min-width: 640px) {
@@ -271,6 +321,14 @@
   /* ! Product page */
   .headingLevel2--Title--most-selling {
     margin-top: 0;
+  }
+
+  /* ! Politics page */
+  .heading--Politics__Title {
+    width: 90%;
+  }
+  .container--Politics__Title {
+    padding: 0 100px;
   }
 }
 

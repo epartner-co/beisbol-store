@@ -22,6 +22,27 @@
   :global(.vtex-rich-text-0-x-paragraph--FooterTitle--terms)::after {
   transform: rotate(180deg);
 }
+
+/* ------------------------------- */
+/* //* Politics Page */
+/* ------------------------------- */
+.trigger--Disclosure__Trigger-Politics {
+  margin-bottom: 15px;
+  width: 100%;
+  background-color: #28508c;
+  border: 1px solid #28508c;
+  border-radius: 80px;
+  cursor: pointer;
+}
+.trigger--Disclosure__Trigger-Politics--visible
+  :global(.vtex-rich-text-0-x-wrapper--Politics__Group-Title)::after {
+  transform: rotate(180deg);
+}
+.content--Disclosure__content {
+  padding: 0 30px;
+  width: 100%;
+}
+
 /* ------------------------------- */
 /* //? Medias Query */
 /* ------------------------------- */
