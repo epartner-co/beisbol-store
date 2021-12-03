@@ -259,6 +259,87 @@
   font-size: 18px;
 }
 
+/* ------------------------------- */
+/* //* About us page*/
+/* ------------------------------- */
+.paragraph--About__Title {
+  margin: 17px auto 0;
+  width: 90%;
+  color: #28508c;
+  font-family: Urbanist;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 49px;
+  text-transform: uppercase;
+}
+.paragraph--About__Text {
+  margin-bottom: 0;
+  color: #0891d0;
+  font-family: 'Urbanist';
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+.headingLevel4--About__Text {
+  margin: 17px 0px 0;
+  color: #28508c;
+  font-family: Urbanist;
+  font-size: 22px;
+  font-weight: 700;
+}
+.wrapper--About__Title--Mision,
+.wrapper--About__Title--Vision {
+  width: 100%;
+}
+.paragraph--About__Title--Mision,
+.paragraph--About__Title--Vision {
+  margin: 0 auto 10px;
+  font-size: 40px;
+}
+.paragraph--About__Text--Mision,
+.paragraph--About__Text--Vision {
+  margin-top: 10px;
+  text-align: start;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--About__Section--Text)
+  .container--About__Text--Text {
+  padding: 40px;
+  width: 85%;
+  background-color: #28508c;
+  border-radius: 10px;
+  transform: translateY(-50px);
+}
+.headingLevel4--About__Text--Text {
+  color: white;
+  text-transform: uppercase;
+}
+.paragraph--About__Text--Text {
+  color: white;
+}
+.container--About__Text--GotToBuy {
+  margin-top: 30px;
+}
+.wrapper--About__Text--GotToBuy {
+  width: 80%;
+}
+.link--About__Text--GotToBuy {
+  display: block;
+  padding: 15px;
+  width: 100%;
+  color: white;
+  background-color: #28508c;
+  border-radius: 100px;
+  text-decoration: none;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.paragraph--About__Text--GotToBuy {
+  margin-top: 0;
+}
+
+/* ------------------------------- */
 /* //? Medias Query */
 /* ------------------------------- */
 @media (min-width: 640px) {
@@ -266,12 +347,23 @@
   .paragraph--Information__item {
     margin: 30px 0;
   }
+
+  /* ! About page  */
+  .wrapper--About__Text--GotToBuy {
+    width: 60%;
+  }
 }
 
 @media (min-width: 1200px) {
   /* ! Header */
   .paragraph--Header-top-text {
     margin: 5px;
+  }
+  .logoContainer--Header-Desktop__Logo {
+    padding: 0;
+  }
+  .logoImage--Header-Desktop__Logo {
+    width: 100%;
   }
 
   /* ! Footer */
@@ -329,6 +421,18 @@
   }
   .container--Politics__Title {
     padding: 0 100px;
+  }
+
+  /* ! About page */
+  .paragraph--About__Title--WhoWeAre {
+    margin: 17px 0 0;
+    width: 100%;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--About__Section--Text)
+    .container--About__Text--Text {
+    width: 100%;
+    transform: translate(-25px, 0px);
+    margin: 30px 0;
   }
 }
 

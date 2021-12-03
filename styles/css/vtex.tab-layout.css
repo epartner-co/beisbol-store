@@ -46,6 +46,23 @@
   border-radius: 10px;
   overflow-y: auto;
 }
+.contentContainer--Politics__Content::-webkit-scrollbar {
+  width: 20px;
+}
+.contentContainer--Politics__Content::-webkit-scrollbar-track {
+  background: #28508c80;
+  border-left: 9px solid white;
+  border-right: 9px solid white;
+}
+.contentContainer--Politics__Content::-webkit-scrollbar-thumb {
+  background: #28508c;
+  border-left: 7px solid white;
+  border-right: 7px solid white;
+}
+.contentContainer--Politics__Content::-webkit-scrollbar-thumb:hover {
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
 
 /* ------------------------------- */
 /* //? Media Queries*/

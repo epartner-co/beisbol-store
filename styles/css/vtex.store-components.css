@@ -620,6 +620,28 @@
   display: none;
 }
 
+/* ------------------------------- */
+/* //* About us Page */
+/* ------------------------------- */
+.infoCardCallActionContainer--About__Image {
+  display: none;
+}
+.infoCardContainer--About__Image {
+  height: 500px;
+}
+.imageElement--About__Image {
+  width: 100%;
+  height: 205px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.imageElement--About__Image--Text {
+  height: 345px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--About__Socials)
+  .imageElementLink--About__Image-Social {
+  width: 50%;
+}
 
 /* ------------------------------- */
 /* //? Medias Query */
@@ -648,9 +670,14 @@
     transform: translateY(-50%);
   }
 
-  /* ! Product page */
   .swiperCaret {
     display: none;
+  }
+
+  /* ! About us page */
+  :global(.vtex-flex-layout-0-x-flexRowContent--About__Socials)
+    .imageElementLink--About__Image-Social {
+    width: 30%;
   }
 }
 
@@ -839,6 +866,11 @@
   /* ! Product page */
   .productImagesGallerySlide {
     width: 100% !important;
+  }
+
+  /* ! About page */
+  .imageElement--About__Image--Text {
+    transform: translateX(25px);
   }
 }
 

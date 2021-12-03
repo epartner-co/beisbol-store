@@ -240,6 +240,57 @@
 }
 
 /* ------------------------------- */
+/* //* About us Page */
+/* ------------------------------- */
+.flexRow--About__Container {
+  padding: 0 15px;
+}
+.flexRow--About__Section--WhoWeAre {
+  background-color: #ffffff;
+  border-radius: 10px;
+  transform: translateY(-50px);
+}
+.flexRowContent--About__Section--Purpose {
+  position: relative;
+  padding: 50px 0 40px;
+}
+.flexRowContent--About__Section--Purpose::before,
+.flexRowContent--About__Section--Purpose::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  width: 56%;
+  height: 1px;
+  background-color: #0891d0;
+  transform: translateX(-50%);
+}
+.flexRowContent--About__Section--Purpose::before {
+  top: 0;
+}
+.flexRowContent--About__Section--Purpose::after {
+  bottom: 0;
+}
+.flexCol--About__Purpose--Mision {
+  margin-bottom: 15px;
+}
+.flexRow--About__Section--Text {
+  padding-top: 40px;
+}
+.flexRowContent--About__Socials {
+  display: flex;
+  justify-content: center;
+}
+.flexRowContent--About__Socials
+  .stretchChildrenWidth:first-child {
+  justify-content: flex-end;
+}
+.flexRowContent--About__Socials
+  .stretchChildrenWidth:last-child {
+  justify-content: flex-start;
+}
+
+/* ------------------------------- */
 /* //? Medias Query */
 /* ------------------------------- */
 @media (min-width: 640px) {
@@ -278,6 +329,16 @@
   }
   .flexRow--Search__Row--Count {
     padding: 5px 0 15px;
+  }
+
+  /* ! About us page */
+  .flexRowContent--About__Container,
+  .flexRowContent--About__Section {
+    flex-direction: column;
+  }
+  .flexRowContent--About__Container
+    .stretchChildrenWidth {
+    width: 100% !important;
   }
 }
 
@@ -413,6 +474,42 @@
   }
   .flexRow--Search__Row--Breadcrumb {
     padding: 20px 5% 0;
+  }
+
+  /* ! About page */
+  .flexRow--About__Container {
+    padding: 0 100px;
+  }
+  .flexRow--About__Section--WhoWeAre {
+    margin: 0 100px;
+    padding: 20px 50px;
+  }
+  .flexRowContent--About__Section--Purpose::before,
+  .flexRowContent--About__Section--Purpose::after {
+    width: 85%;
+  }
+  .flexRowContent--About__Section--Purpose,
+  .flexRowContent--About__Section--Text {
+    flex-direction: row;
+  }
+  .flexRowContent--About__Section--Purpose
+    .stretchChildrenWidth {
+    margin-right: 10px;
+  }
+  .flexRowContent--About__Section--Purpose
+    .stretchChildrenWidth:last-child {
+    margin-left: 10px;
+  }
+  .flexRow--About__Section--Text {
+    padding: 40px 0 70px;
+  }
+  .flexRowContent--About__Container
+    .flexRow--About__Section--Contact {
+    width: 400px;
+  }
+  .vtex-flex-layout-0-x-flexRowContent--About__Socials
+    :global(.vtex-store-components-3-x-imageElementLink--About__Image-Social) {
+    width: 40%;
   }
 }
 
