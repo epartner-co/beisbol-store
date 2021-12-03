@@ -22,6 +22,36 @@
 .link--Header-top-text:hover {
   text-decoration: underline;
 }
+
+/* ------------------------------- */
+/* //* Menu */
+/* ------------------------------- */
+.paragraph--Category__Title {
+  margin: 0;
+  color: #28508c;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-weight: 700;
+}
+.container--Category__Title {
+  justify-content: space-between;
+  align-items: center;
+}
+.container--Category__Title::after {
+  content: '';
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/flecha-icono-search.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+:global(.vtex-disclosure-layout-1-x-trigger--Disclosure__Trigger--Category--visible)
+  .container--Category__Title::after {
+  transform: rotate(180deg);
+}
+
 /* ------------------------------- */
 /* //* Footer */
 /* ------------------------------- */

@@ -2,23 +2,25 @@
 /* //* Header */
 /* ------------------------------- */
 .label {
-  color: #565656;
+  display: block;
+  padding: 0;
+  color: #0891d0;
   font-family: Urbanist;
-  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
-  text-align: center;
-  color: #565656;
+  font-size: 20px;
+  font-weight: 700;
   text-transform: capitalize;
-  display: none;
 }
-.container :global(.vtex-button__label)::before {
-  content: '';
-  width: 25px;
-  height: 25px;
-  background-image: url('https://beisbol.vteximg.com.br/arquivos/icono-usuario-header.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
+.buttonLink :global(.vtex-button) {
+  border: 1px solid #28508c;
+  border-radius: 100px;
+}
+.buttonLink :global(.vtex-button__label) {
+  justify-content: flex-start;
+  padding: 15px 20px !important;
+}
+.container :global(.relative) {
+  width: 100%;
 }
 .container :global(.vtex-button):hover {
   background-color: transparent;
@@ -29,7 +31,18 @@
 @media (min-width: 1200px) {
   /* ! Header */
   .label {
-    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .container
+    :global(.vtex-button__label)::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-image: url('https://beisbol.vteximg.com.br/arquivos/icono-usuario-header.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 }
 /* ------------------------------- */

@@ -61,7 +61,7 @@
       "fullWidth": true
     },
     "children": [
-      "vtex.menu@2.x:menu#category-menu"
+      "vtex.menu@2.x:menu#CategoryMenu"
     ]
   },
 

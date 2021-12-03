@@ -44,6 +44,16 @@
 }
 
 /* ------------------------------- */
+/* //* Menu */
+/* ------------------------------- */
+.trigger--Disclosure__Trigger--Category {
+  margin: 0;
+  padding: 10px 20px;
+  border-color: #28508c;
+  margin-bottom: 15px;
+}
+
+/* ------------------------------- */
 /* //? Medias Query */
 /* ------------------------------- */
 @media (min-width: 800px) {
