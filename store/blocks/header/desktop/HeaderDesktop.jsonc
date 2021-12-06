@@ -61,7 +61,11 @@
       "fullWidth": true
     },
     "children": [
-      "vtex.menu@2.x:menu#CategoryMenu"
+      "menu-item#CategoryMenu", // ../menu/MenuDesktop.jsonc
+      "menu-item#6", // ../menu/Menu.jsonc
+      "menu-item#7", // ../menu/Menu.jsonc
+      "menu-item#9", // ../menu/Menu.jsonc
+      "menu-item#8" // ../menu/Menu.jsonc
     ]
   },
 

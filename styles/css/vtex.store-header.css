@@ -6,7 +6,11 @@
   .headerRowContainer--Header__Container {
     padding: 0 100px;
   }
+  .headerRowContainer--Header__Container {
+    padding-bottom: 10px;
+  }
 }
+
 /* ------------------------------- */
 /* add transitions */
 :global(.vtex-sticky-layout-0-x-container)

@@ -38,6 +38,7 @@
   .container
     :global(.vtex-button__label)::before {
     content: '';
+    margin-right: 12px;
     width: 25px;
     height: 25px;
     background-image: url('https://beisbol.vteximg.com.br/arquivos/icono-usuario-header.png');

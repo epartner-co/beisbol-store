@@ -22,7 +22,8 @@
       "info-card#CategorySlide-item-1",
       "info-card#CategorySlide-item-2",
       "info-card#CategorySlide-item-3",
-      "info-card#CategorySlide-item-4"
+      "info-card#CategorySlide-item-4",
+      "info-card#CategorySlide-item-5"
     ]
   },
 
@@ -36,8 +37,8 @@
       "id": "CategorySlide-item-1",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://beisbol.vteximg.com.br/arquivos/categoria-desinfectantes.png",
-      "callToActionText": "Desinfectantes",
+      "imageUrl": "https://beisbol.vteximg.com.br/arquivos/cuidado-pisos-imagen-home.png",
+      "callToActionText": "Cuidado de los pisos",
       "callToActionUrl": "#"
     }
   },
@@ -52,8 +53,8 @@
       "id": "CategorySlide-item-2",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://beisbol.vteximg.com.br/arquivos/categoria-familiar.png",
-      "callToActionText": "Familiar",
+      "imageUrl": "https://beisbol.vteximg.com.br/arquivos/cuidado-hogar-imagen-home.png",
+      "callToActionText": "Cuidado del hogar",
       "callToActionUrl": "#"
     }
   },
@@ -68,8 +69,8 @@
       "id": "CategorySlide-item-3",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://beisbol.vteximg.com.br/arquivos/categoria-hogar.png",
-      "callToActionText": "Productos para el hogar",
+      "imageUrl": "https://beisbol.vteximg.com.br/arquivos/cuidado-ropa-imagen-home.png",
+      "callToActionText": "Cuidado de la ropa",
       "callToActionUrl": "#"
     }
   },
@@ -84,8 +85,24 @@
       "id": "CategorySlide-item-4",
       "isFullModeStyle": false,
       "textPosition": "left",
-      "imageUrl": "https://beisbol.vteximg.com.br/arquivos/categoria-clinicos.png",
-      "callToActionText": "Productos clinicos",
+      "imageUrl": "https://beisbol.vteximg.com.br/arquivos/cuidado-calzado-imagen-home.png",
+      "callToActionText": "Cuidado de calzado",
+      "callToActionUrl": "#"
+    }
+  },
+
+  // * Category Slide Item 5
+  "info-card#CategorySlide-item-5": {
+    "props": {
+      "blockClass": [
+        "CategorySlide__Item",
+        "CategorySlide__Item--5"
+      ],
+      "id": "CategorySlide-item-5",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://beisbol.vteximg.com.br/arquivos/cuidado-cocina-imagen-home.png",
+      "callToActionText": "Cuidado de la cocina",
       "callToActionUrl": "#"
     }
   }

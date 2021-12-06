@@ -138,7 +138,7 @@
   bottom: 4px;
   width: 100%;
   background-color: rgba(0, 22, 137, 0.3);
-  background-size: initial;
+  background-size: 35%;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 5px;
@@ -146,17 +146,20 @@
   opacity: 0;
 }
 .infoCardImageContainer--CategorySlide__Item--1::after {
-  background-image: url('https://beisbol.vteximg.com.br/arquivos/icono-categoria-desinfectantes-hover.png');
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/cuidado-pisos-icono-home.png');
 }
 .infoCardImageContainer--CategorySlide__Item--2::after {
-  background-image: url('https://beisbol.vteximg.com.br/arquivos/icono-categoria-familiar-hover.png');
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/cuidado-hogar-icono-home.png');
 }
 .infoCardImageContainer--CategorySlide__Item--3::after {
-  background-image: url('https://beisbol.vteximg.com.br/arquivos/icono-categoria-hogar-hover.png');
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/cuidado-ropa-icono-home.png');
   background-size: contain;
 }
 .infoCardImageContainer--CategorySlide__Item--4::after {
-  background-image: url('https://beisbol.vteximg.com.br/arquivos/icono-categoria-clinico-hover.png');
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/cuidado-calzado-icono-home.png');
+}
+.infoCardImageContainer--CategorySlide__Item--5::after {
+  background-image: url('https://beisbol.vteximg.com.br/arquivos/cuidado-cocina-icono-home.png');
 }
 .infoCardContainer--CategorySlide__Item:hover
   .infoCardImageContainer--CategorySlide__Item::after {
@@ -224,6 +227,12 @@
   background-color: transparent;
   border-width: 1px;
   border-radius: 100px;
+  transition: 0.3s;
+}
+.infoCardCallActionContainer--BannerTop__item--1
+  :global(.vtex-button):hover {
+  background-color: white;
+  border-color: white;
 }
 .infoCardCallActionContainer--BannerTop__item--1
   :global(.vtex-button__label) {
@@ -256,6 +265,12 @@
   border-color: white;
   border-width: 1px;
   border-radius: 100px;
+  transition: 0.3s;
+}
+.infoCardCallActionContainer--BannerTop__item--2
+  :global(.vtex-button):hover {
+  background-color: #ededed;
+  border-color: #ededed;
 }
 .infoCardCallActionContainer--BannerTop__item--2
   :global(.vtex-button__label) {
@@ -576,7 +591,7 @@
   text-align: center;
 }
 .productImage {
-  margin: 0 25px;
+  margin: 10px 25px;
   box-shadow: 0px 4px 15px 0px #0000001a;
   border-radius: 5px;
 }
@@ -715,6 +730,9 @@
 
 @media (min-width: 1200px) {
   /* ! Header */
+  .logoContainer--Header-Desktop__Logo {
+    padding: 0;
+  }
   .headerRowContainer--Header__Container {
     padding: 0 100px;
   }
@@ -842,12 +860,13 @@
   .label--Newsletter {
     align-items: flex-start;
     width: 40%;
-    font-size: 60px;
+    font-size: 90px;
   }
   .label--Newsletter::before {
-    font-size: 30px;
+    font-size: 35px;
   }
   .label--Newsletter::after {
+    width: 50%;
     font-size: 20px;
     font-weight: 300;
   }

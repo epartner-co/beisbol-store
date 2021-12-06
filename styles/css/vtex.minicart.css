@@ -111,6 +111,12 @@
   background-color: #28508c;
   border-radius: 100px;
   border-color: #28508c;
+  transition: 0.3s;
+}
+.minicartCheckoutButton
+  :global(.vtex-button):hover {
+  background-color: #183054;
+  border-color: #183054;
 }
 .minicartCheckoutButton
   :global(.vtex-button__label) {
