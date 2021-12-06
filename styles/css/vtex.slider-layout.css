@@ -32,12 +32,6 @@
 .sliderArrows--CategorySlide__Container {
   transform: translateY(-20px);
 }
-.sliderLeftArrow--CategorySlide__Container {
-  left: 100px;
-}
-.sliderRightArrow--CategorySlide__Container {
-  right: 100px;
-}
 /* ! Vitrina */
 .sliderTrackContainer--Shelf__Slider {
   margin-bottom: 50px;
@@ -56,6 +50,12 @@
   /* ! Category Slide */
   .sliderTrackContainer--CategorySlide__Container {
     margin: 0 100px;
+  }
+  .sliderLeftArrow--CategorySlide__Container {
+    left: 100px;
+  }
+  .sliderRightArrow--CategorySlide__Container {
+    right: 100px;
   }
   /* ! Vitrina */
   .sliderLayoutContainer--Shelf__Slider {
