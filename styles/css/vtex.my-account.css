@@ -16,6 +16,10 @@
   border-bottom: 1px solid #0016894d;
   color: #0891d0;
 }
+.menuLinks
+  :global(.vtex-account_menu-link)[href='#/profile'] {
+  color: #28508c;
+}
 .menu {
   padding: 20px;
 }
@@ -240,5 +244,35 @@
 }
 :global(.vtex__icon-close) {
   color: #28508c;
+}
+
+/* ------------------------------- */
+/* //? Media Queries */
+/* ------------------------------- */
+@media (min-width: 1200px) {
+  .menuLinks :global(.vtex-account_menu-link) {
+    border: 0;
+  }
+  .menuLinks
+    :global(.vtex-account_menu-link)[href='#/profile'] {
+    color: #0891d0;
+  }
+  .menuLinks
+    :global(.vtex-account_menu-link.b--action-primary) {
+    color: #28508c;
+  }
+  :global(.vtex-account__page)
+    :global(.vtex-pageHeader__title) {
+    text-align: end;
+  }
+  :global(.vtex-pageHeader__container)
+    :global(.c-on-base.flex.flex-wrap.flex-row.justify-between.mt0) {
+    align-items: center;
+  }
+  :global(.vtex-pageHeader__container)
+    :global(.vtex-pageHeader__children) {
+    margin-top: 0;
+    margin-left: 15px;
+  }
 }
 /* ------------------------------- */

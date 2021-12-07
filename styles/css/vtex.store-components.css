@@ -10,6 +10,10 @@
 .logoImage {
   width: 130px;
 }
+.searchBarContainer
+  :global(.vtex-styleguide-9-x-input) {
+  font-family: 'Urbanist';
+}
 /* ------------------------------- */
 /* //* Footer */
 /* ------------------------------- */

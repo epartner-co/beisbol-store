@@ -1,0 +1,14 @@
+.productListUnavailableItemsMessage {
+  color: #28508c;
+  font-family: Urbanist;
+  font-size: 17px;
+  font-weight: 700;
+  border-bottom: 1px solid #28508c;
+}
+.productListAvailableItemsMessage {
+  color: #28508c;
+  font-family: Urbanist;
+  font-size: 17px;
+  font-weight: 700;
+  border-bottom: 1px solid #28508c;
+}
