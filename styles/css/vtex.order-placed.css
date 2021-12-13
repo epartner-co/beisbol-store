@@ -1,3 +1,6 @@
+/* ------------------------------- */
+/* //* Order placed */
+/* ------------------------------- */
 .section--confirmation::before {
   content: 'Pedido confirmado';
   font-family: Urbanist;
@@ -7,7 +10,7 @@
   text-transform: uppercase;
 }
 .orderPlacedWrapper {
-  padding: 10px 20px;
+  padding: 10px 20px 50px;
 }
 .confirmationIconWrapper {
   display: none;
@@ -165,3 +168,70 @@
   font-weight: 500;
   color: #0891d0;
 }
+.productWrapper {
+  font-family: Urbanist;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0891d0;
+  text-align: start;
+}
+.productQuantity {
+  display: none;
+}
+.productName {
+  font-family: Urbanist;
+  font-size: 17px;
+  font-weight: 400;
+  color: #0891d0;
+  text-align: start;
+}
+.productImageWrapper {
+  box-shadow: 0px 4px 15px 0px #28508c33;
+  border-radius: 10px;
+}
+.section--deliveryPackages {
+  border: 0;
+}
+.totalListItem--Items {
+  font-family: Urbanist;
+  font-size: 16px;
+  font-weight: 400;
+  color: #28508c;
+}
+.totalListItemValue {
+  color: #28508c;
+}
+.totalListItem--Shipping {
+  font-family: Urbanist;
+  font-weight: 400;
+  color: #28508c;
+}
+.totalListItem {
+  color: #28508c;
+}
+.totalListItemLabel {
+  font-family: 'Urbanist';
+}
+.totalListItemValue {
+  font-family: 'Urbanist';
+}
+
+/* ------------------------------- */
+/* //? Media Queries */
+/* ------------------------------- */
+@media (min-width: 1200px) {
+  .orderPlacedWrapper {
+    padding: 40px 100px;
+  }
+  .totalList {
+    width: 40%;
+  }
+}
+@media (min-width: 1500px) {
+  .orderPlacedWrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+/* ------------------------------- */

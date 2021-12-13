@@ -1,6 +1,18 @@
 /* ------------------------------- */
 /* //* Search Page */
 /* ------------------------------- */
+.filterItem--Search__Filter--selected
+  :global(.vtex-checkbox__label) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filterItem--Search__Filter--selected
+  :global(.vtex-checkbox__label)::after {
+  content: '\00d7';
+  font-family: 'Urbanist';
+  font-size: 20px;
+}
 .galleryTitle--layout {
   margin: 0;
   color: #28508c;
@@ -303,6 +315,7 @@
     font-family: Urbanist;
     font-size: 15px;
     font-weight: 400;
+    cursor: pointer;
   }
   .filterItem--Search__Filter--selected
     :global(.vtex-checkbox__container) {

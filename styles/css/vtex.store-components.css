@@ -484,6 +484,24 @@
   font-weight: 700;
   text-align: center;
 }
+.confirmationTitle--Newsletter {
+  color: white;
+  font-family: Urbanist;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+}
+.confirmationText--Newsletter {
+  color: white;
+  font-family: Urbanist;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+}
 
 /* ------------------------------- */
 /* //* Product page */

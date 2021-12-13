@@ -14,7 +14,18 @@
         "tagTitle": "Cuidado de Pisos",
         "text": "Cuidado de Pisos"
       }
-    }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-apparel"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-apparel": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-apparel"
+    ]
   },
 
   // * Item Cuidado Cocina

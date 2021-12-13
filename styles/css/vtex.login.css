@@ -130,6 +130,20 @@
   font-size: 18px;
   font-weight: 600;
 }
+.emailPasswordOptionBtn {
+  margin: 0 20px;
+}
+.emailPasswordOptionBtn :global(.vtex-button) {
+  border: 0;
+  border-radius: 100px;
+}
+.emailPasswordOptionBtn
+  :global(.vtex-button__label) {
+  font-family: Urbanist;
+  font-size: 17px;
+  font-style: normal;
+  color: #28508c;
+}
 
 /* //? Medias Query */
 /* ------------------------------- */

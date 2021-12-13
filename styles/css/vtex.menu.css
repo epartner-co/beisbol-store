@@ -88,7 +88,7 @@
     box-shadow: 0px 4px 10px 0px #0000001a;
   }
   .menuContainer--Menu__Group {
-    padding: 0 20px;
+    padding: 0 100px;
   }
   .menuContainer--Menu__Group
     .styledLinkContainer--MenuItem {
@@ -104,6 +104,9 @@
   .menuContainer--Menu__Group
     .styledLinkContent--MenuItem:hover {
     color: #001689;
+  }
+  .menuItem--MenuItem {
+    width: 10%;
   }
 }
 
