@@ -64,6 +64,7 @@
   .styledLinkContent--MenuItem__Tile {
     font-weight: 500;
     font-size: 16px;
+    justify-content: center;
   }
   .styledLinkContent--MenuItem__Category {
     color: #28508c;
@@ -85,11 +86,11 @@
   .submenuWrapper--SubMenu__Group {
     margin: 0;
     border: none;
-    box-shadow: 0px 4px 10px 0px #0000001a;
+    /* box-shadow: 0px 4px 10px 0px #0000001a; */
   }
-  .menuContainer--Menu__Group {
-    padding: 0 100px;
-  }
+  /* .menuContainer--Menu__Group {
+    padding: 0 20px;
+  } */
   .menuContainer--Menu__Group
     .styledLinkContainer--MenuItem {
     margin: 0;
@@ -104,9 +105,6 @@
   .menuContainer--Menu__Group
     .styledLinkContent--MenuItem:hover {
     color: #001689;
-  }
-  .menuItem--MenuItem {
-    width: 10%;
   }
 }
 
